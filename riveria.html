@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="zh-Hans">
-
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,10 +7,8 @@
 <title>JC Property | Johor Project Finder</title>
 
 <style>
-
 :root{
 --navy:#071522;
---navy2:#0d2130;
 --cream:#f4efe5;
 --gold:#caa45e;
 --white:#fff;
@@ -20,13 +17,9 @@
 --line:#ddd6c9;
 }
 
-*{
-box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
-html{
-scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
 margin:0;
@@ -45,10 +38,7 @@ width:min(1160px,calc(100% - 32px));
 margin:auto;
 }
 
-
-/* =========================
-NAVIGATION
-========================= */
+/* NAV */
 
 .nav{
 position:fixed;
@@ -84,19 +74,11 @@ letter-spacing:.18em;
 line-height:1.25;
 }
 
-.logo small{
-font-size:9px;
-}
-
 .links{
 display:flex;
 gap:25px;
 font-size:13px;
 color:#d9e0e4;
-}
-
-.links a:hover{
-color:var(--gold);
 }
 
 .btn{
@@ -111,23 +93,13 @@ font-weight:800;
 font-size:13px;
 }
 
-
-/* =========================
-HERO
-========================= */
+/* HERO */
 
 .hero{
 min-height:760px;
-
 background:
-linear-gradient(
-90deg,
-#071522f5 0%,
-#071522dc 48%,
-#07152270
-),
+linear-gradient(90deg,#071522f5 0%,#071522dc 48%,#07152270),
 url('avenia-exterior.webp') center/cover;
-
 display:flex;
 align-items:center;
 color:white;
@@ -173,12 +145,6 @@ border:1px solid #ffffff35;
 border-radius:15px;
 background:#ffffff0d;
 min-width:180px;
-transition:.25s;
-}
-
-.route:hover{
-background:#ffffff18;
-transform:translateY(-2px);
 }
 
 .route b{
@@ -190,10 +156,7 @@ font-size:22px;
 color:#b7c1c8;
 }
 
-
-/* =========================
-GENERAL SECTION
-========================= */
+/* SECTION */
 
 .section{
 padding:95px 0;
@@ -231,10 +194,7 @@ line-height:1.7;
 color:#9cabb5;
 }
 
-
-/* =========================
-CIQ / TUAS
-========================= */
+/* ROUTE */
 
 .gateway{
 display:grid;
@@ -265,10 +225,7 @@ color:#d5dde2;
 line-height:2;
 }
 
-
-/* =========================
-FILTER
-========================= */
+/* FILTER */
 
 .filters{
 display:flex;
@@ -291,10 +248,7 @@ color:white;
 border-color:var(--navy);
 }
 
-
-/* =========================
-PROJECT GRID
-========================= */
+/* PROJECTS */
 
 .grid{
 display:grid;
@@ -305,6 +259,7 @@ gap:20px;
 .cardLink{
 display:block;
 height:100%;
+cursor:pointer;
 }
 
 .card{
@@ -349,7 +304,6 @@ display:block;
 position:absolute;
 top:15px;
 left:15px;
-z-index:3;
 background:#071522e8;
 color:white;
 padding:7px 10px;
@@ -372,7 +326,6 @@ font:28px Georgia;
 }
 
 .placeholder small{
-font-size:12px;
 color:#e1e7ea;
 }
 
@@ -404,7 +357,7 @@ border-top:1px solid #eee8de;
 display:flex;
 justify-content:space-between;
 align-items:center;
-gap:15px;
+gap:12px;
 }
 
 .price strong{
@@ -418,10 +371,7 @@ color:#9a7736;
 white-space:nowrap;
 }
 
-
-/* =========================
-PROJECT MATCH
-========================= */
+/* MATCH */
 
 .quiz{
 display:grid;
@@ -469,10 +419,7 @@ background:var(--navy);
 color:white;
 }
 
-
-/* =========================
-WHY JC
-========================= */
+/* WHY */
 
 .why{
 display:grid;
@@ -502,10 +449,7 @@ font-size:13px;
 line-height:1.7;
 }
 
-
-/* =========================
-CTA
-========================= */
+/* CTA */
 
 .cta{
 text-align:center;
@@ -522,13 +466,9 @@ max-width:760px;
 .cta p{
 color:var(--muted);
 margin-bottom:28px;
-line-height:1.7;
 }
 
-
-/* =========================
-FOOTER
-========================= */
+/* FOOTER */
 
 .foot{
 padding:35px 0;
@@ -542,11 +482,6 @@ display:flex;
 justify-content:space-between;
 gap:20px;
 }
-
-
-/* =========================
-FLOAT WHATSAPP
-========================= */
 
 .float{
 position:fixed;
@@ -563,44 +498,26 @@ box-shadow:0 12px 28px #0004;
 z-index:60;
 }
 
-
-/* =========================
-TABLET
-========================= */
+/* TABLET */
 
 @media(max-width:850px){
 
-.links{
-display:none;
-}
+.links{display:none}
 
-.hero{
-min-height:700px;
-}
+.hero{min-height:700px}
 
-.head{
-display:block;
-}
+.head{display:block}
 
-.grid{
-grid-template-columns:1fr 1fr;
-}
+.grid{grid-template-columns:1fr 1fr}
 
 .gateway,
-.quiz{
-grid-template-columns:1fr;
-}
+.quiz{grid-template-columns:1fr}
 
-.why{
-grid-template-columns:1fr 1fr;
-}
+.why{grid-template-columns:1fr 1fr}
 
 }
 
-
-/* =========================
-MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width:560px){
 
@@ -608,26 +525,8 @@ MOBILE
 width:min(100% - 24px,1160px);
 }
 
-.navin{
-height:65px;
-}
-
-.logo strong{
-font-size:27px;
-}
-
-.logo span{
-font-size:10px;
-}
-
-.nav .btn{
-padding:11px 14px;
-font-size:11px;
-}
-
 .hero{
 min-height:650px;
-padding-top:65px;
 }
 
 .hero h1{
@@ -650,10 +549,6 @@ grid-template-columns:1fr;
 height:230px;
 }
 
-.gateway{
-grid-template-columns:1fr;
-}
-
 .why{
 grid-template-columns:1fr 1fr;
 }
@@ -674,16 +569,11 @@ margin-top:10px;
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =========================
-NAVIGATION
-========================= -->
+<!-- NAV -->
 
 <header class="nav">
 
@@ -700,35 +590,20 @@ PROPERTY<br>
 
 </a>
 
-
 <nav class="links">
 
-<a href="#gateway">
-CIQ / TUAS
-</a>
-
-<a href="#projects">
-全部项目
-</a>
-
-<a href="#match">
-帮我选房
-</a>
-
-<a href="#about">
-关于 JC
-</a>
+<a href="#gateway">CIQ / TUAS</a>
+<a href="#projects">全部项目</a>
+<a href="#match">帮我选房</a>
+<a href="#about">关于 JC</a>
 
 </nav>
-
 
 <a
 class="btn"
 href="https://wa.me/60127743554"
 target="_blank">
-
 WhatsApp JC
-
 </a>
 
 </div>
@@ -736,10 +611,7 @@ WhatsApp JC
 </header>
 
 
-
-<!-- =========================
-HERO
-========================= -->
+<!-- HERO -->
 
 <section id="top" class="hero">
 
@@ -749,67 +621,32 @@ HERO
 JOHOR PROPERTY · CURATED BY JC
 </div>
 
-
 <h1>
-
 新山买房，<br>
-
-先选你每天走的
-
-<em>关卡。</em>
-
+先选你每天走的<em>关卡。</em>
 </h1>
 
-
 <p>
-
 不需要一个项目一个项目慢慢找。
-
 根据 CIQ / Woodlands 或 TUAS / Second Link 通勤路线，
-
 直接筛选更适合你的 Johor 房产。
-
 </p>
-
 
 <div class="routeBtns">
 
 <a class="route" href="#projects">
-
-<b>
-CIQ
-</b>
-
-<small>
-Woodlands · JB City
-</small>
-
+<b>CIQ</b>
+<small>Woodlands · JB City</small>
 </a>
 
-
 <a class="route" href="#projects">
-
-<b>
-TUAS
-</b>
-
-<small>
-Second Link · Iskandar Puteri
-</small>
-
+<b>TUAS</b>
+<small>Second Link · Iskandar Puteri</small>
 </a>
 
-
 <a class="route" href="#projects">
-
-<b>
-ALL
-</b>
-
-<small>
-查看全部项目
-</small>
-
+<b>ALL</b>
+<small>查看全部项目</small>
 </a>
 
 </div>
@@ -819,15 +656,11 @@ ALL
 </section>
 
 
-
-<!-- =========================
-GATEWAY
-========================= -->
+<!-- GATEWAY -->
 
 <section id="gateway" class="section dark">
 
 <div class="wrap">
-
 
 <div class="head">
 
@@ -843,21 +676,15 @@ START WITH YOUR ROUTE
 
 </div>
 
-
 <p>
-
 网站不是把项目全部堆给顾客，
-
 而是先从实际通勤方式开始筛选。
-
 </p>
 
 </div>
 
 
-
 <div class="gateway">
-
 
 <div class="gate">
 
@@ -865,36 +692,20 @@ START WITH YOUR ROUTE
 WOODLANDS ROUTE
 </div>
 
-<h3>
-CIQ
-</h3>
+<h3>CIQ</h3>
 
 <p>
-
 适合经常往返 JB City / Woodlands，
-
 以及想靠近市区成熟生活圈的买家。
-
 </p>
 
 <ul>
-
-<li>
-JB City / RTS Catchment
-</li>
-
-<li>
-Tebrau / Permas 方向
-</li>
-
-<li>
-Condo & City Living
-</li>
-
+<li>JB City / RTS Catchment</li>
+<li>Tebrau / Permas 方向</li>
+<li>Condo & City Living</li>
 </ul>
 
 </div>
-
 
 
 <div class="gate">
@@ -903,36 +714,20 @@ Condo & City Living
 SECOND LINK ROUTE
 </div>
 
-<h3>
-TUAS
-</h3>
+<h3>TUAS</h3>
 
 <p>
-
 适合 Tuas / Jurong 工作族，
-
 以及偏好 Iskandar Puteri、Nusajaya 一带的买家。
-
 </p>
 
 <ul>
-
-<li>
-Bukit Indah / Nusajaya
-</li>
-
-<li>
-Iskandar Puteri
-</li>
-
-<li>
-Landed Property
-</li>
-
+<li>Bukit Indah / Nusajaya</li>
+<li>Iskandar Puteri</li>
+<li>Landed Property</li>
 </ul>
 
 </div>
-
 
 </div>
 
@@ -941,15 +736,11 @@ Landed Property
 </section>
 
 
-
-<!-- =========================
-PROJECTS
-========================= -->
+<!-- PROJECTS -->
 
 <section id="projects" class="section cream">
 
 <div class="wrap">
-
 
 <div class="head">
 
@@ -965,57 +756,37 @@ JC'S PROJECT COLLECTION
 
 </div>
 
-
 <p>
-
 先根据地区、通勤路线和房产类型找到适合你的项目，
-
 再进入完整项目页面查看详细资料。
-
 </p>
 
 </div>
 
 
-
 <div class="filters">
 
-<span class="filter active">
-全部
-</span>
-
-<span class="filter">
-CIQ
-</span>
-
-<span class="filter">
-TUAS
-</span>
-
-<span class="filter">
-Landed
-</span>
-
-<span class="filter">
-Condo
-</span>
+<span class="filter active">全部</span>
+<span class="filter">CIQ</span>
+<span class="filter">TUAS</span>
+<span class="filter">Landed</span>
+<span class="filter">Condo</span>
 
 </div>
-
 
 
 <div class="grid">
 
 
-<!-- =========================
-RIVERIA
-整个卡片都可以点击
-========================= -->
+<!-- ========================= -->
+<!-- RIVERIA - 整张卡直接进入详情页 -->
+<!-- ========================= -->
 
-<a class="cardLink" href="riveria.html">
+<a
+class="cardLink"
+href="https://jc-properties-chi.vercel.app/riveria.html">
 
 <div class="card">
-
 
 <div class="photo">
 
@@ -1041,12 +812,10 @@ Riveria Garden · Avenia
 </h3>
 
 <div class="meta">
-
 Freehold Individual Title ·
 20×70 ·
 4房4厕 ·
 Build-up 2,219 sqft
-
 </div>
 
 
@@ -1062,7 +831,6 @@ RM958K 起
 
 </div>
 
-
 </div>
 
 </div>
@@ -1070,41 +838,27 @@ RM958K 起
 </a>
 
 
-
-<!-- =========================
-AURORA
-========================= -->
+<!-- AURORA -->
 
 <div class="cardStatic">
-
 
 <div class="photo">
 
 <div class="placeholder">
 
 <div>
-
-<b>
-Aurora
-</b>
-
+<b>Aurora</b>
 <br>
-
-<small>
-Project photo coming soon
-</small>
-
+<small>Project photo coming soon</small>
 </div>
 
 </div>
-
 
 <span class="tag">
 JOHOR · LANDED
 </span>
 
 </div>
-
 
 <div class="body">
 
@@ -1117,13 +871,10 @@ Aurora
 </h3>
 
 <div class="meta">
-
 Freehold Individual Title ·
 20×70 ·
 4房4厕
-
 </div>
-
 
 <div class="price">
 
@@ -1135,9 +886,7 @@ RM868K 起
 class="project-link"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Aurora."
 target="_blank">
-
 咨询 JC →
-
 </a>
 
 </div>
@@ -1147,41 +896,27 @@ target="_blank">
 </div>
 
 
-
-<!-- =========================
-M TIARA
-========================= -->
+<!-- M TIARA -->
 
 <div class="cardStatic">
-
 
 <div class="photo">
 
 <div class="placeholder">
 
 <div>
-
-<b>
-M Tiara
-</b>
-
+<b>M Tiara</b>
 <br>
-
-<small>
-Project photo coming soon
-</small>
-
+<small>Project photo coming soon</small>
 </div>
 
 </div>
-
 
 <span class="tag">
 SKUDAI · LANDED
 </span>
 
 </div>
-
 
 <div class="body">
 
@@ -1193,14 +928,10 @@ MAH SING
 M Tiara
 </h3>
 
-
 <div class="meta">
-
 2-Storey Terrace / Cluster ·
 Gated & Guarded
-
 </div>
-
 
 <div class="price">
 
@@ -1212,9 +943,7 @@ Gated & Guarded
 class="project-link"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20M%20Tiara."
 target="_blank">
-
 咨询 JC →
-
 </a>
 
 </div>
@@ -1224,41 +953,27 @@ target="_blank">
 </div>
 
 
-
-<!-- =========================
-NUSA PERMATA
-========================= -->
+<!-- NUSA PERMATA -->
 
 <div class="cardStatic">
-
 
 <div class="photo">
 
 <div class="placeholder">
 
 <div>
-
-<b>
-Nusa Permata
-</b>
-
+<b>Nusa Permata</b>
 <br>
-
-<small>
-Project photo coming soon
-</small>
-
+<small>Project photo coming soon</small>
 </div>
 
 </div>
-
 
 <span class="tag">
 TUAS · LANDED
 </span>
 
 </div>
-
 
 <div class="body">
 
@@ -1270,14 +985,10 @@ NUSA SENTRAL
 Nusa Permata
 </h3>
 
-
 <div class="meta">
-
 Individual Title ·
 20×65 / 20×70 / 22×70
-
 </div>
-
 
 <div class="price">
 
@@ -1289,9 +1000,7 @@ RM852K 起
 class="project-link"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Nusa%20Permata."
 target="_blank">
-
 咨询 JC →
-
 </a>
 
 </div>
@@ -1301,41 +1010,27 @@ target="_blank">
 </div>
 
 
-
-<!-- =========================
-NUSA MELATI
-========================= -->
+<!-- NUSA MELATI -->
 
 <div class="cardStatic">
-
 
 <div class="photo">
 
 <div class="placeholder">
 
 <div>
-
-<b>
-Nusa Melati
-</b>
-
+<b>Nusa Melati</b>
 <br>
-
-<small>
-Project photo coming soon
-</small>
-
+<small>Project photo coming soon</small>
 </div>
 
 </div>
-
 
 <span class="tag">
 TUAS · LANDED
 </span>
 
 </div>
-
 
 <div class="body">
 
@@ -1347,14 +1042,10 @@ ISKANDAR PUTERI
 Nusa Melati
 </h3>
 
-
 <div class="meta">
-
 20×70 / 23×70 ·
 Double Storey Landed
-
 </div>
-
 
 <div class="price">
 
@@ -1366,9 +1057,7 @@ RM935K 起
 class="project-link"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Nusa%20Melati."
 target="_blank">
-
 咨询 JC →
-
 </a>
 
 </div>
@@ -1378,41 +1067,27 @@ target="_blank">
 </div>
 
 
-
-<!-- =========================
-ASCENT PARK
-========================= -->
+<!-- ASCENT PARK -->
 
 <div class="cardStatic">
-
 
 <div class="photo">
 
 <div class="placeholder">
 
 <div>
-
-<b>
-Ascent Park
-</b>
-
+<b>Ascent Park</b>
 <br>
-
-<small>
-Project photo coming soon
-</small>
-
+<small>Project photo coming soon</small>
 </div>
 
 </div>
-
 
 <span class="tag">
 TUAS · LANDED
 </span>
 
 </div>
-
 
 <div class="body">
 
@@ -1424,14 +1099,10 @@ ISKANDAR PUTERI
 Ascent Park
 </h3>
 
-
 <div class="meta">
-
 Mix Development ·
 Terrace / 3 Storey / Shoplot
-
 </div>
-
 
 <div class="price">
 
@@ -1443,9 +1114,7 @@ RM900K+ 起
 class="project-link"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Ascent%20Park."
 target="_blank">
-
 咨询 JC →
-
 </a>
 
 </div>
@@ -1462,15 +1131,11 @@ target="_blank">
 </section>
 
 
-
-<!-- =========================
-PROJECT MATCH
-========================= -->
+<!-- MATCH -->
 
 <section id="match" class="section">
 
 <div class="wrap quiz">
-
 
 <div>
 
@@ -1483,19 +1148,14 @@ PROJECT MATCH
 </h2>
 
 <p style="color:var(--muted);line-height:1.8">
-
 告诉我你的预算、通勤路线和想找的房型，
-
 我可以直接帮你从这些项目里面筛选。
-
 </p>
 
 </div>
 
 
-
 <div class="qbox">
-
 
 <div class="q">
 
@@ -1504,23 +1164,12 @@ PROJECT MATCH
 </b>
 
 <div class="chips">
-
-<span class="chip">
-CIQ
-</span>
-
-<span class="chip sel">
-TUAS
-</span>
-
-<span class="chip">
-不确定
-</span>
-
+<span class="chip">CIQ</span>
+<span class="chip sel">TUAS</span>
+<span class="chip">不确定</span>
 </div>
 
 </div>
-
 
 
 <div class="q">
@@ -1530,27 +1179,13 @@ TUAS
 </b>
 
 <div class="chips">
-
-<span class="chip">
-RM500k 以下
-</span>
-
-<span class="chip">
-RM500k–800k
-</span>
-
-<span class="chip sel">
-RM800k–1M
-</span>
-
-<span class="chip">
-RM1M+
-</span>
-
+<span class="chip">RM500k 以下</span>
+<span class="chip">RM500k–800k</span>
+<span class="chip sel">RM800k–1M</span>
+<span class="chip">RM1M+</span>
 </div>
 
 </div>
-
 
 
 <div class="q">
@@ -1560,23 +1195,12 @@ RM1M+
 </b>
 
 <div class="chips">
-
-<span class="chip sel">
-Landed
-</span>
-
-<span class="chip">
-Condo
-</span>
-
-<span class="chip">
-都可以
-</span>
-
+<span class="chip sel">Landed</span>
+<span class="chip">Condo</span>
+<span class="chip">都可以</span>
 </div>
 
 </div>
-
 
 
 <a
@@ -1584,11 +1208,8 @@ class="btn"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20please%20help%20me%20choose%20a%20Johor%20property."
 target="_blank"
 style="width:100%;justify-content:center">
-
 WhatsApp JC 获取推荐
-
 </a>
-
 
 </div>
 
@@ -1597,15 +1218,11 @@ WhatsApp JC 获取推荐
 </section>
 
 
-
-<!-- =========================
-ABOUT
-========================= -->
+<!-- ABOUT -->
 
 <section id="about" class="section dark">
 
 <div class="wrap">
-
 
 <div class="head">
 
@@ -1616,11 +1233,8 @@ WHY JC PROPERTY
 </div>
 
 <h2>
-
 不是给你最多项目，<br>
-
 是帮你筛掉不适合的。
-
 </h2>
 
 </div>
@@ -1628,94 +1242,42 @@ WHY JC PROPERTY
 </div>
 
 
-
 <div class="why">
 
-
 <div>
-
-<span>
-01
-</span>
-
-<h3>
-先看需求
-</h3>
-
+<span>01</span>
+<h3>先看需求</h3>
 <p>
-
 预算、用途、通勤路线先搞清楚，
-
 再开始看项目。
-
 </p>
-
 </div>
 
-
-
 <div>
-
-<span>
-02
-</span>
-
-<h3>
-CIQ / TUAS 分类
-</h3>
-
+<span>02</span>
+<h3>CIQ / TUAS 分类</h3>
 <p>
-
 用实际跨境路线来整理 Johor 项目，
-
 更容易比较。
-
 </p>
-
 </div>
 
-
-
 <div>
-
-<span>
-03
-</span>
-
-<h3>
-项目比较
-</h3>
-
+<span>03</span>
+<h3>项目比较</h3>
 <p>
-
 地点、户型、价格与项目卖点集中比较。
-
 </p>
-
 </div>
-
-
 
 <div>
-
-<span>
-04
-</span>
-
-<h3>
-一对一咨询
-</h3>
-
+<span>04</span>
+<h3>一对一咨询</h3>
 <p>
-
 从筛选、看房到后续流程，
-
 都可以直接联系 JC。
-
 </p>
-
 </div>
-
 
 </div>
 
@@ -1724,10 +1286,7 @@ CIQ / TUAS 分类
 </section>
 
 
-
-<!-- =========================
-CONTACT
-========================= -->
+<!-- CONTACT -->
 
 <section id="contact" class="cta">
 
@@ -1735,55 +1294,37 @@ CONTACT
 JC PROPERTY
 </div>
 
-
 <h2>
-
 告诉我你的工作地点、预算和想找的房型。
-
 </h2>
 
-
 <p>
-
 我帮你从手上的 Johor 项目里面先筛一轮。
-
 </p>
-
 
 <a
 class="btn"
 href="https://wa.me/60127743554"
 target="_blank">
-
 WhatsApp JC
-
 </a>
 
 </section>
 
 
-
-<!-- =========================
-FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer class="foot">
 
 <div class="wrap footin">
 
 <div>
-
 JC PROPERTY · JOHOR PROJECT FINDER
-
 </div>
 
-
 <div>
-
 价格、配套及单位供应以发展商最新资料为准。
-
 © 2026 JC Property.
-
 </div>
 
 </div>
@@ -1791,18 +1332,12 @@ JC PROPERTY · JOHOR PROJECT FINDER
 </footer>
 
 
-
-<!-- FLOAT WHATSAPP -->
-
 <a
 class="float"
 href="https://wa.me/60127743554"
 target="_blank">
-
 WA
-
 </a>
-
 
 </body>
 </html>
