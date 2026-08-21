@@ -37,20 +37,23 @@ text-decoration:none;
 color:inherit;
 }
 
-img{display:block}
+img{
+display:block;
+}
 
 .wrap{
 width:min(1160px,calc(100% - 32px));
 margin:auto;
 }
 
-/* NAV */
+
+/* NAVIGATION */
 
 .nav{
 position:fixed;
 inset:0 0 auto;
 z-index:30;
-background:rgba(7,21,34,.92);
+background:rgba(7,21,34,.94);
 backdrop-filter:blur(16px);
 border-bottom:1px solid #ffffff15;
 }
@@ -96,16 +99,15 @@ font-weight:800;
 font-size:13px;
 }
 
+
 /* HERO */
 
 .hero{
 min-height:720px;
 padding-top:70px;
-
 background:
 linear-gradient(90deg,#071522f4 0%,#071522ce 50%,#07152250),
-url('avenia-exterior.webp') center/cover;
-
+url('riveria-hero.jpg') center/cover;
 display:flex;
 align-items:end;
 color:white;
@@ -166,7 +168,8 @@ border-radius:999px;
 font-size:13px;
 }
 
-/* SECTIONS */
+
+/* GENERAL */
 
 .section{
 padding:88px 0;
@@ -204,6 +207,7 @@ line-height:1.7;
 color:#9eabb4;
 }
 
+
 /* STATS */
 
 .stats{
@@ -231,6 +235,7 @@ display:block;
 font:29px Georgia;
 margin-top:8px;
 }
+
 
 /* DEVELOPMENT */
 
@@ -275,6 +280,7 @@ line-height:1.8;
 .panel ul{
 padding-left:19px;
 }
+
 
 /* LOCATION */
 
@@ -323,6 +329,7 @@ font-size:12px;
 line-height:1.6;
 }
 
+
 /* FLOOR PLAN */
 
 .plan{
@@ -367,6 +374,7 @@ font-size:13px;
 line-height:1.65;
 }
 
+
 /* GALLERY */
 
 .gallery{
@@ -378,13 +386,14 @@ gap:12px;
 .g{
 border-radius:20px;
 overflow:hidden;
-background:#ddd;
-min-height:245px;
+background:#e2e2e2;
+height:280px;
 position:relative;
 }
 
 .g.wide{
 grid-column:span 2;
+height:400px;
 }
 
 .g img{
@@ -397,12 +406,13 @@ object-fit:cover;
 position:absolute;
 left:12px;
 bottom:12px;
-background:#071522df;
+background:#071522e8;
 color:#fff;
-padding:7px 10px;
+padding:7px 11px;
 border-radius:999px;
 font-size:10px;
 }
+
 
 /* CLUB */
 
@@ -445,6 +455,7 @@ font-size:11px;
 margin-top:5px;
 }
 
+
 /* PRICE */
 
 .priceGrid{
@@ -483,6 +494,7 @@ width:100%;
 border-radius:16px;
 }
 
+
 /* PACKAGE */
 
 .packageGrid{
@@ -515,6 +527,7 @@ font-size:12px;
 line-height:1.65;
 }
 
+
 /* MEMBERSHIP */
 
 .membership{
@@ -536,6 +549,7 @@ width:100%;
 border-radius:16px;
 }
 
+
 /* CTA */
 
 .cta{
@@ -554,6 +568,7 @@ max-width:760px;
 color:var(--muted);
 line-height:1.7;
 }
+
 
 /* FOOTER */
 
@@ -585,7 +600,8 @@ box-shadow:0 12px 30px #0004;
 z-index:40;
 }
 
-/* RESPONSIVE */
+
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -642,12 +658,10 @@ display:block;
 grid-template-columns:1fr;
 }
 
+.g,
 .g.wide{
 grid-column:auto;
-}
-
-.g{
-min-height:250px;
+height:260px;
 }
 
 .facilityGrid,
@@ -668,7 +682,9 @@ margin-top:8px;
 </style>
 </head>
 
+
 <body>
+
 
 <!-- NAV -->
 
@@ -677,22 +693,18 @@ margin-top:8px;
 <div class="wrap navin">
 
 <a class="brand" href="index.html">
-
 <strong>JC</strong>
-
 <span>
 PROPERTY<br>
 JOHOR PROJECT FINDER
 </span>
-
 </a>
 
 <a class="back" href="index.html">
 ← 返回全部项目
 </a>
 
-<a
-class="btn"
+<a class="btn"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Riveria%20Garden%20Avenia."
 target="_blank">
 WhatsApp JC
@@ -701,6 +713,7 @@ WhatsApp JC
 </div>
 
 </header>
+
 
 
 <!-- HERO -->
@@ -720,8 +733,10 @@ Riveria Garden<br>
 
 <p>
 Avenia 20×70 Double Storey Terrace House。
-Freehold Individual Title，
-适合寻找 Iskandar Puteri 有地住宅与 Second Link 通勤路线的买家。
+Freehold Individual Title，4房4厕，
+Build-up 2,219 sqft。
+适合寻找 Iskandar Puteri 有地住宅以及
+Second Link / Tuas 通勤路线的买家。
 </p>
 
 <div class="pills">
@@ -736,8 +751,7 @@ Freehold Individual Title，
 
 <div class="actions">
 
-<a
-class="btn"
+<a class="btn"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Riveria%20Garden%20Avenia."
 target="_blank">
 询问最新单位
@@ -752,6 +766,7 @@ target="_blank">
 </div>
 
 </section>
+
 
 
 <!-- OVERVIEW -->
@@ -776,7 +791,7 @@ AVENIA OVERVIEW
 
 <p>
 Avenia 为 20×70 Double Storey Terrace House，
-价格从 RM958K 起。
+网站目前价格展示 RM958K 起。
 </p>
 
 </div>
@@ -811,6 +826,7 @@ Avenia 为 20×70 Double Storey Terrace House，
 </section>
 
 
+
 <!-- DEVELOPMENT -->
 
 <section class="section">
@@ -823,7 +839,7 @@ Avenia 为 20×70 Double Storey Terrace House，
 
 <img
 src="avenia-exterior.webp"
-alt="Riveria Garden Avenia exterior">
+alt="Riveria Garden Avenia Exterior">
 
 </div>
 
@@ -840,19 +856,23 @@ Riveria Garden @ Wawari
 
 <ul>
 
-<li>Developer: Wawari Sdn Bhd</li>
+<li>Location: Iskandar Puteri</li>
 <li>District: Johor Bahru</li>
 <li>Mukim: Pulai</li>
 <li>Freehold</li>
 <li>Individual Title</li>
 <li>Double Storey Terrace House</li>
-<li>Avenia / Phase L4</li>
+<li>Avenia</li>
+<li>20×70</li>
+<li>4 Bedrooms · 4 Bathrooms</li>
+<li>Built-up 2,219 sqft</li>
 
 </ul>
 
 <p>
 主要卖点集中在 Second Link 通勤、
-Iskandar Puteri 生活圈、河畔环境与社区设施。
+Iskandar Puteri 生活圈、
+有地住宅空间以及社区设施。
 </p>
 
 </div>
@@ -862,6 +882,7 @@ Iskandar Puteri 生活圈、河畔环境与社区设施。
 </div>
 
 </section>
+
 
 
 <!-- LOCATION -->
@@ -879,15 +900,15 @@ LOCATION & CONNECTIVITY
 </div>
 
 <h2>
-靠近 Second Link 的<br>
-Iskandar Puteri 生活圈。
+Iskandar Puteri<br>
+Second Link 生活圈。
 </h2>
 
 </div>
 
 <p>
-连接多条主要高速公路，
-并靠近成熟商业、教育与医疗设施。
+适合经常使用 Tuas / Second Link，
+以及希望居住在 Iskandar Puteri 一带的买家。
 </p>
 
 </div>
@@ -899,31 +920,58 @@ Iskandar Puteri 生活圈。
 
 <img
 src="location-map.webp"
-alt="Riveria Garden location map">
+alt="Riveria Garden Location Map">
 
 </div>
 
+
+<div>
 
 <div class="routeList">
 
 <div class="routeItem">
+
 <b>Iskandar Coastal Highway</b>
-<span>连接 Iskandar Puteri / Johor Bahru 主要区域。</span>
+
+<span>
+连接 Iskandar Puteri 与 Johor Bahru 主要区域。
+</span>
+
 </div>
 
+
 <div class="routeItem">
+
 <b>Second Link Expressway</b>
-<span>适合 TUAS / Second Link 通勤路线。</span>
+
+<span>
+适合 TUAS / Second Link 跨境通勤路线。
+</span>
+
 </div>
 
-<div class="routeItem">
-<b>Pasir Gudang–Perling Highway</b>
-<span>连接 Johor 多个成熟生活圈。</span>
-</div>
 
 <div class="routeItem">
-<b>North–South Expressway</b>
-<span>衔接更广泛的公路网络。</span>
+
+<b>Iskandar Puteri</b>
+
+<span>
+成熟住宅、商业及教育生活圈。
+</span>
+
+</div>
+
+
+<div class="routeItem">
+
+<b>Johor Road Network</b>
+
+<span>
+可衔接多个主要高速公路与周边地区。
+</span>
+
+</div>
+
 </div>
 
 </div>
@@ -933,6 +981,7 @@ alt="Riveria Garden location map">
 </div>
 
 </section>
+
 
 
 <!-- FLOOR PLAN -->
@@ -956,8 +1005,9 @@ FLOOR PLAN
 </div>
 
 <p>
-Ground Floor 与 First Floor 规划放在同一张图，
-方便查看整体空间配置。
+Ground Floor 与 First Floor
+规划放在同一张图，
+让顾客快速了解整体空间。
 </p>
 
 </div>
@@ -969,7 +1019,7 @@ Ground Floor 与 First Floor 规划放在同一张图，
 
 <img
 src="floor-plan.webp"
-alt="Avenia floor plan">
+alt="Avenia Floor Plan">
 
 </div>
 
@@ -978,13 +1028,12 @@ alt="Avenia floor plan">
 
 <div class="mini">
 
-<b>
-Ground Floor
-</b>
+<b>Ground Floor</b>
 
 <p>
-Living、Dining、Kitchen、Bedroom 4、
-Bath 4、Yard 与 Car Porch。
+Living、Dining、Kitchen、
+Bedroom、Bathroom、
+Yard 与 Car Porch。
 </p>
 
 </div>
@@ -992,13 +1041,12 @@ Bath 4、Yard 与 Car Porch。
 
 <div class="mini">
 
-<b>
-First Floor
-</b>
+<b>First Floor</b>
 
 <p>
-Master Bedroom、Bedroom 2、Bedroom 3、
-Family Hall、Balcony 与 Bathrooms。
+Master Bedroom、
+Bedroom 2、Bedroom 3、
+Family Area 与 Bathrooms。
 </p>
 
 </div>
@@ -1006,12 +1054,11 @@ Family Hall、Balcony 与 Bathrooms。
 
 <div class="mini">
 
-<b>
-Built-up
-</b>
+<b>Built-up</b>
 
 <p>
-2,219 sqft · Double Storey Terrace House。
+2,219 sqft ·
+Double Storey Terrace House。
 </p>
 
 </div>
@@ -1025,7 +1072,8 @@ Built-up
 </section>
 
 
-<!-- SHOW UNIT -->
+
+<!-- GALLERY -->
 
 <section class="section">
 
@@ -1046,7 +1094,8 @@ Avenia 室内空间。
 </div>
 
 <p>
-预览 Avenia Show Unit 的空间规划与装修感觉。
+查看 Living、Dining、Kitchen
+以及各个 Bedroom 的空间设计。
 </p>
 
 </div>
@@ -1055,11 +1104,13 @@ Avenia 室内空间。
 <div class="gallery">
 
 
+<!-- LIVING -->
+
 <div class="g wide">
 
 <img
 src="living-room.webp"
-alt="Avenia living room">
+alt="Avenia Living Room">
 
 <span class="label">
 Living Room
@@ -1068,37 +1119,28 @@ Living Room
 </div>
 
 
+<!-- DINING -->
+
 <div class="g">
 
 <img
-src="dining-area.webp"
-alt="Avenia dining area">
+src="Dining Area.webp"
+alt="Avenia Dining Area">
 
 <span class="label">
-Dining
+Dining Area
 </span>
 
 </div>
 
 
-<div class="g">
-
-<img
-src="study-room.webp"
-alt="Avenia study room">
-
-<span class="label">
-Study / Work Area
-</span>
-
-</div>
-
+<!-- KITCHEN -->
 
 <div class="g">
 
 <img
-src="kitchen.webp"
-alt="Avenia kitchen">
+src="Kitchen.webp"
+alt="Avenia Kitchen">
 
 <span class="label">
 Kitchen
@@ -1107,11 +1149,13 @@ Kitchen
 </div>
 
 
+<!-- MASTER BEDROOM -->
+
 <div class="g wide">
 
 <img
-src="master-bedroom.webp"
-alt="Avenia master bedroom">
+src="Master Bedroom.webp"
+alt="Avenia Master Bedroom">
 
 <span class="label">
 Master Bedroom
@@ -1120,11 +1164,13 @@ Master Bedroom
 </div>
 
 
+<!-- BEDROOM 2 -->
+
 <div class="g">
 
 <img
-src="bedroom-2.webp"
-alt="Avenia bedroom 2">
+src="Bedroom 2.webp"
+alt="Avenia Bedroom 2">
 
 <span class="label">
 Bedroom 2
@@ -1133,11 +1179,13 @@ Bedroom 2
 </div>
 
 
+<!-- BEDROOM 3 -->
+
 <div class="g">
 
 <img
-src="bedroom-3.webp"
-alt="Avenia bedroom 3">
+src="Bedroom 3.webp"
+alt="Avenia Bedroom 3">
 
 <span class="label">
 Bedroom 3
@@ -1146,24 +1194,28 @@ Bedroom 3
 </div>
 
 
+<!-- BEDROOM 4 -->
+
 <div class="g">
 
 <img
-src="kids-bedroom.webp"
-alt="Avenia kids bedroom">
+src="Bedroom 4.webp"
+alt="Avenia Bedroom 4">
 
 <span class="label">
-Kids Bedroom
+Bedroom 4
 </span>
 
 </div>
 
 
+<!-- BATHROOM -->
+
 <div class="g">
 
 <img
-src="bathroom.webp"
-alt="Avenia bathroom">
+src="Bathroom.webp"
+alt="Avenia Bathroom">
 
 <span class="label">
 Bathroom
@@ -1177,6 +1229,7 @@ Bathroom
 </div>
 
 </section>
+
 
 
 <!-- CLUBHOUSE -->
@@ -1201,7 +1254,8 @@ THE WAWARI CLUB
 </div>
 
 <p>
-设施涵盖运动、休闲、工作与社交空间。
+Clubhouse 提供运动、
+休闲、工作及社交空间。
 </p>
 
 </div>
@@ -1237,7 +1291,7 @@ alt="The Wawari Club">
 
 <div class="facility">
 <b>Pickleball Courts</b>
-<div>Popular racquet sport</div>
+<div>Racquet sport</div>
 </div>
 
 <div class="facility">
@@ -1246,8 +1300,8 @@ alt="The Wawari Club">
 </div>
 
 <div class="facility">
-<b>Event Hall / Sauna</b>
-<div>社区活动与休闲</div>
+<b>Community Facilities</b>
+<div>休闲与社区活动</div>
 </div>
 
 </div>
@@ -1257,6 +1311,7 @@ alt="The Wawari Club">
 </div>
 
 </section>
+
 
 
 <!-- PRICE -->
@@ -1274,14 +1329,14 @@ PRICE & UNIT MIX
 </div>
 
 <h2>
-Avenia L4(a)(i)
+Avenia
 </h2>
 
 </div>
 
 <p>
-L4(a)(i) 共 165 个单位，
-包括 Intermediate、End Lot 与 Corner Lot。
+不同方向及单位类型价格会有差异，
+最新 available unit 可直接向 JC 查询。
 </p>
 
 </div>
@@ -1300,16 +1355,18 @@ RM958K
 </div>
 
 <p>
-20×70 · 2,219 sqft ·
+20×70 ·
+2,219 sqft ·
 4房4厕 ·
 Freehold Individual Title
 </p>
 
-<a
-class="btn"
+<a class="btn"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20please%20send%20me%20the%20latest%20Avenia%20price%20list%20and%20available%20units."
 target="_blank">
+
 拿最新 Price List
+
 </a>
 
 </div>
@@ -1319,7 +1376,7 @@ target="_blank">
 
 <img
 src="pricing-summary.webp"
-alt="Avenia pricing summary">
+alt="Avenia Pricing Summary">
 
 </div>
 
@@ -1328,6 +1385,7 @@ alt="Avenia pricing summary">
 </div>
 
 </section>
+
 
 
 <!-- SALES PACKAGE -->
@@ -1351,8 +1409,10 @@ Avenia Package
 </div>
 
 <p>
-Local 与 Foreigner Package。
-最终价格、rebate、费用及资格以发展商最新确认资料为准。
+Local 与 Foreigner
+可查看对应 Sales Package。
+最终价格、rebate 与费用
+以发展商最新资料为准。
 </p>
 
 </div>
@@ -1360,19 +1420,21 @@ Local 与 Foreigner Package。
 
 <div class="packageGrid">
 
+
 <div class="packageCard">
 
 <img
 src="sales-package-local.webp"
-alt="Avenia local sales package">
+alt="Avenia Local Sales Package">
 
 <h3>
 Local Package
 </h3>
 
 <p>
-Booking Fee、SPA rebate、legal / stamp package
-及 Wawari Club Membership 以最新发展商条款为准。
+查看 Local Buyer
+相关 Sales Package、
+rebate 与费用资料。
 </p>
 
 </div>
@@ -1382,18 +1444,20 @@ Booking Fee、SPA rebate、legal / stamp package
 
 <img
 src="sales-package-foreigner.webp"
-alt="Avenia foreigner sales package">
+alt="Avenia Foreigner Sales Package">
 
 <h3>
 Foreigner Package
 </h3>
 
 <p>
-Foreigner Package 与相关 legal / rebate
-条款以发展商最新确认资料为准。
+查看 Foreigner Buyer
+相关 Sales Package
+及购买条件。
 </p>
 
 </div>
+
 
 </div>
 
@@ -1402,7 +1466,8 @@ Foreigner Package 与相关 legal / rebate
 </section>
 
 
-<!-- MEMBERSHIP -->
+
+<!-- CLUB MEMBERSHIP -->
 
 <section class="section cream">
 
@@ -1423,8 +1488,9 @@ The Wawari Club Membership
 </div>
 
 <p>
-Riveria Garden purchaser 的 Club Membership
-及续费规则以管理方最新条款为准。
+Riveria Garden purchaser
+相关 Club Membership
+详情可参考官方 package。
 </p>
 
 </div>
@@ -1436,7 +1502,7 @@ Riveria Garden purchaser 的 Club Membership
 
 <img
 src="wawari-club-membership.webp"
-alt="Wawari Club membership">
+alt="Wawari Club Membership">
 
 </div>
 
@@ -1448,16 +1514,18 @@ Membership 信息
 </h3>
 
 <p>
-查看 Membership Fee、Annual Subscription
-以及 Purchaser Entitlement。
-如需确认最新 Package，可直接联系 JC。
+Membership fee、
+annual subscription
+以及 purchaser entitlement
+以最新管理方条款为准。
 </p>
 
-<a
-class="btn"
+<a class="btn"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20The%20Wawari%20Club%20membership."
 target="_blank">
+
 询问 Club Package
+
 </a>
 
 </div>
@@ -1469,7 +1537,8 @@ target="_blank">
 </section>
 
 
-<!-- CTA -->
+
+<!-- CONTACT -->
 
 <section class="cta">
 
@@ -1478,22 +1547,25 @@ CONTACT JC
 </div>
 
 <h2>
-想看 Riveria 最新单位、方向和付款方案？
+想看 Riveria 最新单位、
+方向和付款方案？
 </h2>
 
 <p>
-直接 WhatsApp JC，
-根据预算、用途与通勤路线筛选 Avenia 单位。
+告诉我你的预算、用途和通勤路线，
+我帮你筛适合的 Avenia 单位。
 </p>
 
-<a
-class="btn"
+<a class="btn"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Riveria%20Garden%20Avenia."
 target="_blank">
+
 WhatsApp JC
+
 </a>
 
 </section>
+
 
 
 <!-- FOOTER -->
@@ -1503,7 +1575,8 @@ WhatsApp JC
 <div class="wrap footin">
 
 <div>
-JC PROPERTY · RIVERIA GARDEN @ WAWARI
+JC PROPERTY ·
+RIVERIA GARDEN @ WAWARI
 </div>
 
 <div>
@@ -1516,12 +1589,18 @@ JC PROPERTY · RIVERIA GARDEN @ WAWARI
 </footer>
 
 
+
+<!-- FLOATING WHATSAPP -->
+
 <a
 class="float"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Riveria%20Garden%20Avenia."
 target="_blank">
+
 WA
+
 </a>
+
 
 </body>
 </html>
