@@ -8,585 +8,623 @@
 
 <style>
 :root{
-  --navy:#071522;
-  --navy2:#0d2130;
-  --cream:#f4efe5;
-  --gold:#caa45e;
-  --white:#fff;
-  --ink:#12202b;
-  --muted:#6f7a82;
-  --line:#ddd6c9;
+--navy:#071522;
+--cream:#f4efe5;
+--gold:#caa45e;
+--white:#fff;
+--ink:#12202b;
+--muted:#6f7a82;
+--line:#ddd6c9;
 }
 
-*{box-sizing:border-box}
+*{
+box-sizing:border-box;
+}
 
-html{scroll-behavior:smooth}
+html{
+scroll-behavior:smooth;
+}
 
 body{
-  margin:0;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",
-  "PingFang SC","Microsoft YaHei",sans-serif;
-  background:#fff;
-  color:var(--ink);
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+background:#fff;
+color:var(--ink);
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+text-decoration:none;
+color:inherit;
 }
 
 .wrap{
-  width:min(1160px,calc(100% - 32px));
-  margin:auto;
+width:min(1160px,calc(100% - 32px));
+margin:auto;
 }
 
 /* NAV */
 
 .nav{
-  position:fixed;
-  inset:0 0 auto;
-  z-index:10;
-  background:rgba(7,21,34,.90);
-  backdrop-filter:blur(16px);
-  border-bottom:1px solid #ffffff16;
+position:fixed;
+inset:0 0 auto;
+z-index:50;
+background:rgba(7,21,34,.94);
+backdrop-filter:blur(16px);
+border-bottom:1px solid #ffffff16;
 }
 
 .navin{
-  height:72px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  color:white;
+height:72px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+color:white;
 }
 
 .logo{
-  display:flex;
-  gap:10px;
-  align-items:center;
+display:flex;
+gap:10px;
+align-items:center;
 }
 
 .logo strong{
-  font:32px Georgia;
-  color:var(--gold);
+font:32px Georgia;
+color:var(--gold);
 }
 
 .logo span{
-  font-size:12px;
-  letter-spacing:.18em;
+font-size:12px;
+letter-spacing:.18em;
+line-height:1.25;
 }
 
 .links{
-  display:flex;
-  gap:25px;
-  font-size:13px;
-  color:#d9e0e4;
+display:flex;
+gap:25px;
+font-size:13px;
+color:#d9e0e4;
 }
 
 .btn{
-  display:inline-flex;
-  padding:13px 18px;
-  border-radius:999px;
-  background:var(--gold);
-  color:#0b1520;
-  font-weight:800;
-  font-size:13px;
-  align-items:center;
-  justify-content:center;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:13px 18px;
+border-radius:999px;
+background:var(--gold);
+color:#0b1520;
+font-weight:800;
+font-size:13px;
 }
 
 /* HERO */
 
 .hero{
-  min-height:760px;
-
-  background:
-  linear-gradient(
-    90deg,
-    #071522f5 0%,
-    #071522dc 48%,
-    #07152270
-  ),
-  url('riveria-hero.jpg') center/cover;
-
-  display:flex;
-  align-items:center;
-  color:white;
-  padding-top:72px;
+min-height:760px;
+background:
+linear-gradient(90deg,#071522f5 0%,#071522dc 48%,#07152270),
+url('avenia-exterior.webp') center/cover;
+display:flex;
+align-items:center;
+color:white;
+padding-top:72px;
 }
 
 .hero h1{
-  font:500 clamp(55px,8vw,92px)/1.02 Georgia;
-  margin:18px 0 24px;
-  letter-spacing:-.04em;
+font:500 clamp(55px,8vw,92px)/1.02 Georgia;
+margin:18px 0 24px;
+letter-spacing:-.04em;
 }
 
 .hero h1 em{
-  font-style:normal;
-  color:var(--gold);
+font-style:normal;
+color:var(--gold);
 }
 
 .hero p{
-  font-size:18px;
-  line-height:1.8;
-  color:#d0d8de;
-  max-width:650px;
+font-size:18px;
+line-height:1.8;
+color:#d0d8de;
+max-width:650px;
 }
 
 .eyebrow{
-  font-size:11px;
-  letter-spacing:.2em;
-  font-weight:800;
-  color:var(--gold);
-  text-transform:uppercase;
+font-size:11px;
+letter-spacing:.2em;
+font-weight:800;
+color:var(--gold);
+text-transform:uppercase;
 }
 
 .routeBtns{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:32px;
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:32px;
 }
 
 .route{
-  padding:18px 25px;
-  border:1px solid #ffffff35;
-  border-radius:15px;
-  background:#ffffff0d;
-  min-width:180px;
+padding:18px 25px;
+border:1px solid #ffffff35;
+border-radius:15px;
+background:#ffffff0d;
+min-width:180px;
 }
 
 .route b{
-  display:block;
-  font-size:22px;
+display:block;
+font-size:22px;
 }
 
 .route small{
-  color:#b7c1c8;
+color:#b7c1c8;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 .section{
-  padding:95px 0;
+padding:95px 0;
 }
 
 .cream{
-  background:var(--cream);
+background:var(--cream);
 }
 
 .dark{
-  background:var(--navy);
-  color:white;
+background:var(--navy);
+color:white;
 }
 
 .head{
-  display:flex;
-  justify-content:space-between;
-  gap:30px;
-  align-items:end;
-  margin-bottom:38px;
+display:flex;
+justify-content:space-between;
+gap:30px;
+align-items:end;
+margin-bottom:38px;
 }
 
 .head h2{
-  font:500 clamp(38px,5vw,58px)/1.08 Georgia;
-  margin:9px 0;
+font:500 clamp(38px,5vw,58px)/1.08 Georgia;
+margin:9px 0;
 }
 
 .head p{
-  max-width:500px;
-  color:var(--muted);
-  line-height:1.7;
+max-width:500px;
+color:var(--muted);
+line-height:1.7;
 }
 
 .dark .head p{
-  color:#9cabb5;
+color:#9cabb5;
 }
 
-/* ROUTE */
+/* GATEWAY */
 
 .gateway{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
 }
 
 .gate{
-  border:1px solid #ffffff1c;
-  border-radius:25px;
-  padding:35px;
-  background:#ffffff08;
+border:1px solid #ffffff1c;
+border-radius:25px;
+padding:35px;
+background:#ffffff08;
 }
 
 .gate h3{
-  font:42px Georgia;
-  margin:10px 0;
+font:42px Georgia;
+margin:10px 0;
 }
 
 .gate p{
-  color:#aeb9c1;
-  line-height:1.7;
+color:#aeb9c1;
+line-height:1.7;
 }
 
 .gate ul{
-  padding-left:18px;
-  color:#d5dde2;
-  line-height:2;
+padding-left:18px;
+color:#d5dde2;
+line-height:2;
 }
 
-/* PROJECTS */
+/* FILTER */
 
 .filters{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  margin-bottom:30px;
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+margin-bottom:30px;
 }
 
 .filter{
-  padding:10px 15px;
-  border-radius:999px;
-  border:1px solid var(--line);
-  font-size:12px;
-  background:white;
+padding:10px 15px;
+border-radius:999px;
+border:1px solid var(--line);
+font-size:12px;
+background:white;
 }
 
 .filter.active{
-  background:var(--navy);
-  color:white;
-  border-color:var(--navy);
+background:var(--navy);
+color:white;
+border-color:var(--navy);
 }
 
+/* PROJECT GRID */
+
 .grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.cardLink{
+display:block;
+height:100%;
+cursor:pointer;
 }
 
 .card{
-  background:white;
-  border-radius:22px;
-  overflow:hidden;
-  border:1px solid #e7e1d6;
-  box-shadow:0 14px 35px #0715220c;
+height:100%;
+background:white;
+border-radius:22px;
+overflow:hidden;
+border:1px solid #e7e1d6;
+box-shadow:0 14px 35px #0715220c;
+transition:.25s;
+}
+
+.cardLink:hover .card{
+transform:translateY(-5px);
+box-shadow:0 20px 45px #07152218;
+}
+
+.cardStatic{
+height:100%;
+background:white;
+border-radius:22px;
+overflow:hidden;
+border:1px solid #e7e1d6;
+box-shadow:0 14px 35px #0715220c;
 }
 
 .photo{
-  height:240px;
-  background:linear-gradient(135deg,#23394a,#87959c);
-  position:relative;
-  overflow:hidden;
+height:240px;
+background:linear-gradient(135deg,#23394a,#87959c);
+position:relative;
+overflow:hidden;
 }
 
 .photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
 }
 
 .tag{
-  position:absolute;
-  top:15px;
-  left:15px;
-  background:#071522df;
-  color:white;
-  padding:7px 10px;
-  border-radius:999px;
-  font-size:10px;
-  font-weight:800;
+position:absolute;
+top:15px;
+left:15px;
+background:#071522e8;
+color:white;
+padding:7px 10px;
+border-radius:999px;
+font-size:10px;
+font-weight:800;
 }
 
 .placeholder{
-  height:100%;
-  display:grid;
-  place-items:center;
-  color:#fff;
-  text-align:center;
-  padding:25px;
+height:100%;
+display:grid;
+place-items:center;
+color:#fff;
+text-align:center;
+padding:25px;
 }
 
 .placeholder b{
-  font:28px Georgia;
+font:28px Georgia;
+}
+
+.placeholder small{
+color:#e1e7ea;
 }
 
 .body{
-  padding:22px;
+padding:22px;
 }
 
 .body small{
-  color:#9a7a3c;
-  font-weight:800;
+color:#9a7a3c;
+font-weight:800;
 }
 
 .body h3{
-  font:500 27px Georgia;
-  margin:8px 0 10px;
+font:500 27px Georgia;
+margin:8px 0 10px;
 }
 
 .meta{
-  color:var(--muted);
-  font-size:13px;
-  line-height:1.65;
-  min-height:43px;
+color:var(--muted);
+font-size:13px;
+line-height:1.65;
+min-height:43px;
 }
 
 .price{
-  margin-top:20px;
-  padding-top:16px;
-  border-top:1px solid #eee8de;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:15px;
+margin-top:20px;
+padding-top:16px;
+border-top:1px solid #eee8de;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:12px;
 }
 
 .price strong{
-  font:24px Georgia;
+font:24px Georgia;
 }
 
 .project-link{
-  font-size:12px;
-  font-weight:800;
-  color:#9a7736;
-  white-space:nowrap;
+font-size:12px;
+font-weight:800;
+color:#9a7736;
+white-space:nowrap;
 }
 
 /* MATCH */
 
 .quiz{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:60px;
-  align-items:center;
+display:grid;
+grid-template-columns:.9fr 1.1fr;
+gap:60px;
+align-items:center;
 }
 
 .quiz h2{
-  font:52px Georgia;
-  margin:10px 0;
+font:52px Georgia;
+margin:10px 0;
 }
 
 .qbox{
-  background:white;
-  border-radius:25px;
-  padding:32px;
-  box-shadow:0 18px 50px #07152212;
+background:white;
+border-radius:25px;
+padding:32px;
+box-shadow:0 18px 50px #07152212;
 }
 
 .q{
-  margin-bottom:22px;
+margin-bottom:22px;
 }
 
 .q b{
-  font-size:13px;
+font-size:13px;
 }
 
 .chips{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  margin-top:10px;
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+margin-top:10px;
 }
 
 .chip{
-  border:1px solid #ddd;
-  border-radius:999px;
-  padding:9px 12px;
-  font-size:12px;
+border:1px solid #ddd;
+border-radius:999px;
+padding:9px 12px;
+font-size:12px;
 }
 
 .chip.sel{
-  background:var(--navy);
-  color:white;
+background:var(--navy);
+color:white;
 }
 
-/* WHY JC */
+/* WHY */
 
 .why{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:14px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:14px;
 }
 
 .why div{
-  border:1px solid #ffffff18;
-  border-radius:20px;
-  padding:25px;
-  background:#ffffff07;
+border:1px solid #ffffff18;
+border-radius:20px;
+padding:25px;
+background:#ffffff07;
 }
 
 .why span{
-  color:var(--gold);
-  font:30px Georgia;
+color:var(--gold);
+font:30px Georgia;
 }
 
 .why h3{
-  font-size:16px;
+font-size:16px;
 }
 
 .why p{
-  color:#9eabb4;
-  font-size:13px;
-  line-height:1.7;
+color:#9eabb4;
+font-size:13px;
+line-height:1.7;
 }
 
 /* CTA */
 
 .cta{
-  text-align:center;
-  padding:95px 20px;
-  background:var(--cream);
+text-align:center;
+padding:95px 20px;
+background:var(--cream);
 }
 
 .cta h2{
-  font:52px Georgia;
-  margin:10px auto 20px;
-  max-width:760px;
+font:52px Georgia;
+margin:10px auto 20px;
+max-width:760px;
 }
 
 .cta p{
-  color:var(--muted);
-  margin-bottom:28px;
+color:var(--muted);
+margin-bottom:28px;
 }
 
 /* FOOTER */
 
 .foot{
-  padding:35px 0;
-  background:#040e16;
-  color:#84919a;
-  font-size:11px;
+padding:35px 0;
+background:#040e16;
+color:#84919a;
+font-size:11px;
 }
 
 .footin{
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
+display:flex;
+justify-content:space-between;
+gap:20px;
 }
 
-/* FLOATING WHATSAPP */
-
 .float{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  width:55px;
-  height:55px;
-  border-radius:50%;
-  background:var(--gold);
-  display:grid;
-  place-items:center;
-  font-weight:900;
-  box-shadow:0 12px 28px #0004;
-  z-index:20;
+position:fixed;
+right:18px;
+bottom:18px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:var(--gold);
+display:grid;
+place-items:center;
+font-weight:900;
+box-shadow:0 12px 28px #0004;
+z-index:60;
+}
+
+/* TABLET */
+
+@media(max-width:850px){
+
+.links{
+display:none;
+}
+
+.hero{
+min-height:700px;
+}
+
+.head{
+display:block;
+}
+
+.grid{
+grid-template-columns:1fr 1fr;
+}
+
+.gateway,
+.quiz{
+grid-template-columns:1fr;
+}
+
+.why{
+grid-template-columns:1fr 1fr;
+}
+
 }
 
 /* MOBILE */
 
-@media(max-width:850px){
-
-  .links{display:none}
-
-  .hero{min-height:700px}
-
-  .head{display:block}
-
-  .grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .gateway,
-  .quiz{
-    grid-template-columns:1fr;
-  }
-
-  .why{
-    grid-template-columns:1fr 1fr;
-  }
-}
-
 @media(max-width:560px){
 
-  .wrap{
-    width:min(100% - 24px,1160px);
-  }
-
-  .hero{
-    min-height:650px;
-  }
-
-  .hero h1{
-    font-size:50px;
-  }
-
-  .hero p{
-    font-size:15px;
-  }
-
-  .section{
-    padding:70px 0;
-  }
-
-  .grid{
-    grid-template-columns:1fr;
-  }
-
-  .photo{
-    height:220px;
-  }
-
-  .gateway{
-    grid-template-columns:1fr;
-  }
-
-  .why{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .quiz h2,
-  .cta h2{
-    font-size:40px;
-  }
-
-  .footin{
-    display:block;
-  }
-
-  .footin div+div{
-    margin-top:10px;
-  }
+.wrap{
+width:min(100% - 24px,1160px);
 }
+
+.hero{
+min-height:650px;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.section{
+padding:70px 0;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.photo{
+height:230px;
+}
+
+.why{
+grid-template-columns:1fr 1fr;
+}
+
+.quiz h2,
+.cta h2{
+font-size:40px;
+}
+
+.footin{
+display:block;
+}
+
+.footin div+div{
+margin-top:10px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
+
+<!-- NAV -->
 
 <header class="nav">
 
 <div class="wrap navin">
 
 <a class="logo" href="#top">
+
 <strong>JC</strong>
+
 <span>
 PROPERTY<br>
 <small>JOHOR PROJECT FINDER</small>
 </span>
+
 </a>
 
 <nav class="links">
+
 <a href="#gateway">CIQ / TUAS</a>
 <a href="#projects">全部项目</a>
 <a href="#match">帮我选房</a>
 <a href="#about">关于 JC</a>
+
 </nav>
 
-<a class="btn"
+<a
+class="btn"
 href="https://wa.me/60127743554"
 target="_blank">
 WhatsApp JC
 </a>
 
 </div>
-</header>
 
+</header>
 
 <!-- HERO -->
 
@@ -627,11 +665,12 @@ JOHOR PROPERTY · CURATED BY JC
 </a>
 
 </div>
+
 </div>
+
 </section>
 
-
-<!-- ROUTE -->
+<!-- GATEWAY -->
 
 <section id="gateway" class="section dark">
 
@@ -640,23 +679,31 @@ JOHOR PROPERTY · CURATED BY JC
 <div class="head">
 
 <div>
-<div class="eyebrow">START WITH YOUR ROUTE</div>
-<h2>你平时走哪一个关卡？</h2>
+
+<div class="eyebrow">
+START WITH YOUR ROUTE
+</div>
+
+<h2>
+你平时走哪一个关卡？
+</h2>
+
 </div>
 
 <p>
-网站不是把项目全部堆给你，
+网站不是把项目全部堆给顾客，
 而是先从实际通勤方式开始筛选。
 </p>
 
 </div>
 
-
 <div class="gateway">
 
 <div class="gate">
 
-<div class="eyebrow">WOODLANDS ROUTE</div>
+<div class="eyebrow">
+WOODLANDS ROUTE
+</div>
 
 <h3>CIQ</h3>
 
@@ -673,10 +720,11 @@ JOHOR PROPERTY · CURATED BY JC
 
 </div>
 
-
 <div class="gate">
 
-<div class="eyebrow">SECOND LINK ROUTE</div>
+<div class="eyebrow">
+SECOND LINK ROUTE
+</div>
 
 <h3>TUAS</h3>
 
@@ -694,9 +742,10 @@ JOHOR PROPERTY · CURATED BY JC
 </div>
 
 </div>
-</div>
-</section>
 
+</div>
+
+</section>
 
 <!-- PROJECTS -->
 
@@ -707,8 +756,15 @@ JOHOR PROPERTY · CURATED BY JC
 <div class="head">
 
 <div>
-<div class="eyebrow">JC'S PROJECT COLLECTION</div>
-<h2>全部项目，一次看。</h2>
+
+<div class="eyebrow">
+JC'S PROJECT COLLECTION
+</div>
+
+<h2>
+全部项目，一次看。
+</h2>
+
 </div>
 
 <p>
@@ -717,7 +773,6 @@ JOHOR PROPERTY · CURATED BY JC
 </p>
 
 </div>
-
 
 <div class="filters">
 
@@ -729,18 +784,21 @@ JOHOR PROPERTY · CURATED BY JC
 
 </div>
 
-
 <div class="grid">
 
-
 <!-- RIVERIA -->
+
+<a
+class="cardLink"
+href="riveria.html">
 
 <div class="card">
 
 <div class="photo">
 
-<img src="riveria-hero.jpg"
-alt="Riveria Garden">
+<img
+src="avenia-exterior.webp"
+alt="Riveria Garden Avenia">
 
 <span class="tag">
 TUAS · LANDED
@@ -748,43 +806,57 @@ TUAS · LANDED
 
 </div>
 
-
 <div class="body">
 
-<small>ISKANDAR PUTERI</small>
+<small>
+ISKANDAR PUTERI
+</small>
 
-<h3>Riveria Garden · Avenia</h3>
+<h3>
+Riveria Garden · Avenia
+</h3>
 
 <div class="meta">
-Freehold Individual Title · 20×70 ·
-4房4厕 · Build-up 2,219 sqft
+Freehold Individual Title ·
+20×70 ·
+4房4厕 ·
+Build-up 2,219 sqft
 </div>
 
 <div class="price">
 
-<strong>RM958K 起</strong>
+<strong>
+RM958K 起
+</strong>
 
-<a class="project-link"
-href="riveria.html">
+<span class="project-link">
 查看完整资料 →
+</span>
+
+</div>
+
+</div>
+
+</div>
+
 </a>
-
-</div>
-</div>
-</div>
-
 
 <!-- AURORA -->
 
-<div class="card">
+<div class="cardStatic">
 
 <div class="photo">
 
 <div class="placeholder">
+
 <div>
-<b>Aurora</b><br>
+
+<b>Aurora</b>
+<br>
 <small>Project photo coming soon</small>
+
 </div>
+
 </div>
 
 <span class="tag">
@@ -795,41 +867,53 @@ JOHOR · LANDED
 
 <div class="body">
 
-<small>LEGACY VALLEY</small>
+<small>
+LEGACY VALLEY
+</small>
 
-<h3>Aurora</h3>
+<h3>
+Aurora
+</h3>
 
 <div class="meta">
 Freehold Individual Title ·
-20×70 · 4房4厕
+20×70 ·
+4房4厕
 </div>
 
 <div class="price">
 
-<strong>RM868K 起</strong>
+<strong>
+RM868K 起
+</strong>
 
-<a class="project-link"
-href="https://wa.me/60127743554"
+<a
+class="project-link"
+href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Aurora."
 target="_blank">
 咨询 JC →
 </a>
 
 </div>
-</div>
+
 </div>
 
+</div>
 
 <!-- M TIARA -->
 
-<div class="card">
+<div class="cardStatic">
 
 <div class="photo">
 
 <div class="placeholder">
 
 <div>
-<b>M Tiara</b><br>
+
+<b>M Tiara</b>
+<br>
 <small>Project photo coming soon</small>
+
 </div>
 
 </div>
@@ -842,9 +926,13 @@ SKUDAI · LANDED
 
 <div class="body">
 
-<small>MAH SING</small>
+<small>
+MAH SING
+</small>
 
-<h3>M Tiara</h3>
+<h3>
+M Tiara
+</h3>
 
 <div class="meta">
 2-Storey Terrace / Cluster ·
@@ -853,30 +941,37 @@ Gated & Guarded
 
 <div class="price">
 
-<strong>资料更新中</strong>
+<strong>
+资料更新中
+</strong>
 
-<a class="project-link"
-href="https://wa.me/60127743554"
+<a
+class="project-link"
+href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20M%20Tiara."
 target="_blank">
 咨询 JC →
 </a>
 
 </div>
-</div>
+
 </div>
 
+</div>
 
 <!-- NUSA PERMATA -->
 
-<div class="card">
+<div class="cardStatic">
 
 <div class="photo">
 
 <div class="placeholder">
 
 <div>
-<b>Nusa Permata</b><br>
+
+<b>Nusa Permata</b>
+<br>
 <small>Project photo coming soon</small>
+
 </div>
 
 </div>
@@ -889,9 +984,13 @@ TUAS · LANDED
 
 <div class="body">
 
-<small>NUSA SENTRAL</small>
+<small>
+NUSA SENTRAL
+</small>
 
-<h3>Nusa Permata</h3>
+<h3>
+Nusa Permata
+</h3>
 
 <div class="meta">
 Individual Title ·
@@ -900,30 +999,37 @@ Individual Title ·
 
 <div class="price">
 
-<strong>RM852K 起</strong>
+<strong>
+RM852K 起
+</strong>
 
-<a class="project-link"
-href="https://wa.me/60127743554"
+<a
+class="project-link"
+href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Nusa%20Permata."
 target="_blank">
 咨询 JC →
 </a>
 
 </div>
-</div>
+
 </div>
 
+</div>
 
 <!-- NUSA MELATI -->
 
-<div class="card">
+<div class="cardStatic">
 
 <div class="photo">
 
 <div class="placeholder">
 
 <div>
-<b>Nusa Melati</b><br>
+
+<b>Nusa Melati</b>
+<br>
 <small>Project photo coming soon</small>
+
 </div>
 
 </div>
@@ -936,9 +1042,13 @@ TUAS · LANDED
 
 <div class="body">
 
-<small>ISKANDAR PUTERI</small>
+<small>
+ISKANDAR PUTERI
+</small>
 
-<h3>Nusa Melati</h3>
+<h3>
+Nusa Melati
+</h3>
 
 <div class="meta">
 20×70 / 23×70 ·
@@ -947,30 +1057,37 @@ Double Storey Landed
 
 <div class="price">
 
-<strong>RM935K 起</strong>
+<strong>
+RM935K 起
+</strong>
 
-<a class="project-link"
-href="https://wa.me/60127743554"
+<a
+class="project-link"
+href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Nusa%20Melati."
 target="_blank">
 咨询 JC →
 </a>
 
 </div>
-</div>
+
 </div>
 
+</div>
 
 <!-- ASCENT PARK -->
 
-<div class="card">
+<div class="cardStatic">
 
 <div class="photo">
 
 <div class="placeholder">
 
 <div>
-<b>Ascent Park</b><br>
+
+<b>Ascent Park</b>
+<br>
 <small>Project photo coming soon</small>
+
 </div>
 
 </div>
@@ -983,9 +1100,13 @@ TUAS · LANDED
 
 <div class="body">
 
-<small>ISKANDAR PUTERI</small>
+<small>
+ISKANDAR PUTERI
+</small>
 
-<h3>Ascent Park</h3>
+<h3>
+Ascent Park
+</h3>
 
 <div class="meta">
 Mix Development ·
@@ -994,23 +1115,28 @@ Terrace / 3 Storey / Shoplot
 
 <div class="price">
 
-<strong>RM900K+ 起</strong>
+<strong>
+RM900K+ 起
+</strong>
 
-<a class="project-link"
-href="https://wa.me/60127743554"
+<a
+class="project-link"
+href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Ascent%20Park."
 target="_blank">
 咨询 JC →
 </a>
 
 </div>
-</div>
-</div>
-
 
 </div>
+
 </div>
+
+</div>
+
+</div>
+
 </section>
-
 
 <!-- MATCH -->
 
@@ -1035,62 +1161,70 @@ PROJECT MATCH
 
 </div>
 
-
 <div class="qbox">
 
 <div class="q">
 
-<b>1. 你平时走哪个关卡？</b>
+<b>
+1. 你平时走哪个关卡？
+</b>
 
 <div class="chips">
+
 <span class="chip">CIQ</span>
 <span class="chip sel">TUAS</span>
 <span class="chip">不确定</span>
-</div>
 
 </div>
 
+</div>
 
 <div class="q">
 
-<b>2. 预算？</b>
+<b>
+2. 预算？
+</b>
 
 <div class="chips">
+
 <span class="chip">RM500k 以下</span>
 <span class="chip">RM500k–800k</span>
 <span class="chip sel">RM800k–1M</span>
 <span class="chip">RM1M+</span>
-</div>
 
 </div>
 
+</div>
 
 <div class="q">
 
-<b>3. 想买什么？</b>
+<b>
+3. 想买什么？
+</b>
 
 <div class="chips">
+
 <span class="chip sel">Landed</span>
 <span class="chip">Condo</span>
 <span class="chip">都可以</span>
-</div>
 
 </div>
 
+</div>
 
-<a class="btn"
-href="https://wa.me/60127743554?text=Hi%20JC%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3Johor%E6%88%BF%E4%BA%A7%E9%A1%B9%E7%9B%AE"
+<a
+class="btn"
+href="https://wa.me/60127743554?text=Hi%20JC%2C%20please%20help%20me%20choose%20a%20Johor%20property."
 target="_blank"
 style="width:100%;justify-content:center">
-
 WhatsApp JC 获取推荐
-
 </a>
 
 </div>
-</div>
-</section>
 
+</div>
+
+</section>
 
 <!-- ABOUT -->
 
@@ -1112,50 +1246,75 @@ WHY JC PROPERTY
 </h2>
 
 </div>
-</div>
 
+</div>
 
 <div class="why">
 
 <div>
+
 <span>01</span>
-<h3>先看需求</h3>
+
+<h3>
+先看需求
+</h3>
+
 <p>
 预算、用途、通勤路线先搞清楚，
 再开始看项目。
 </p>
+
 </div>
 
 <div>
+
 <span>02</span>
-<h3>CIQ / TUAS 分类</h3>
+
+<h3>
+CIQ / TUAS 分类
+</h3>
+
 <p>
 用实际跨境路线来整理 Johor 项目，
 更容易比较。
 </p>
+
 </div>
 
 <div>
+
 <span>03</span>
-<h3>项目比较</h3>
+
+<h3>
+项目比较
+</h3>
+
 <p>
 地点、户型、价格与项目卖点集中比较。
 </p>
+
 </div>
 
 <div>
+
 <span>04</span>
-<h3>一对一咨询</h3>
+
+<h3>
+一对一咨询
+</h3>
+
 <p>
 从筛选、看房到后续流程，
 都可以直接联系 JC。
 </p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
-
 
 <!-- CONTACT -->
 
@@ -1173,16 +1332,16 @@ JC PROPERTY
 我帮你从手上的 Johor 项目里面先筛一轮。
 </p>
 
-<a class="btn"
-href="https://wa.me/60127743554?text=Hi%20JC%EF%BC%8C%E6%88%91%E6%83%B3%E6%89%BEJohor%E6%88%BF%E4%BA%A7"
+<a
+class="btn"
+href="https://wa.me/60127743554"
 target="_blank">
-
 WhatsApp JC
-
 </a>
 
 </section>
 
+<!-- FOOTER -->
 
 <footer class="foot">
 
@@ -1198,15 +1357,14 @@ JC PROPERTY · JOHOR PROJECT FINDER
 </div>
 
 </div>
+
 </footer>
 
-
-<a class="float"
+<a
+class="float"
 href="https://wa.me/60127743554"
 target="_blank">
-
 WA
-
 </a>
 
 </body>
