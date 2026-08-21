@@ -9,7 +9,7 @@
 :root{--navy:#071522;--navy2:#0d2130;--cream:#f4efe5;--gold:#caa45e;--white:#fff;--ink:#12202b;--muted:#6f7a82;--line:#ddd6c9}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:#fff;color:var(--ink)}a{text-decoration:none;color:inherit}img{display:block}.wrap{width:min(1160px,calc(100% - 32px));margin:auto}
 .nav{position:fixed;inset:0 0 auto;z-index:30;background:rgba(7,21,34,.92);backdrop-filter:blur(16px);border-bottom:1px solid #ffffff15}.navin{height:70px;display:flex;align-items:center;justify-content:space-between;color:white}.brand{display:flex;align-items:center;gap:10px}.brand strong{font:30px Georgia;color:var(--gold)}.brand span{font-size:11px;letter-spacing:.16em}.back{font-size:12px;color:#d6dfe4}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:999px;background:var(--gold);color:#0b1520;font-weight:800;font-size:13px}
-.hero{min-height:720px;padding-top:70px;background:linear-gradient(90deg,#071522f4 0%,#071522ce 50%,#07152250),url('avenia-exterior.webp') center/cover;display:flex;align-items:end;color:white}.heroInner{padding:80px 0 68px}.eyebrow{font-size:11px;letter-spacing:.2em;font-weight:800;color:var(--gold);text-transform:uppercase}.hero h1{font:500 clamp(52px,8vw,88px)/1 Georgia;margin:14px 0 20px;letter-spacing:-.04em}.hero p{font-size:17px;line-height:1.8;color:#d4dde2;max-width:700px}.pills{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}.pill{padding:9px 12px;border-radius:999px;border:1px solid #ffffff35;background:#ffffff0d;font-size:12px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.ghost{display:inline-flex;padding:13px 18px;border:1px solid #ffffff45;border-radius:999px;font-size:13px}
+.hero{min-height:720px;padding-top:70px;background:linear-gradient(90deg,#071522f4 0%,#071522ce 50%,#07152250),url('riveria-hero.jpg') center/cover;display:flex;align-items:end;color:white}.heroInner{padding:80px 0 68px}.eyebrow{font-size:11px;letter-spacing:.2em;font-weight:800;color:var(--gold);text-transform:uppercase}.hero h1{font:500 clamp(52px,8vw,88px)/1 Georgia;margin:14px 0 20px;letter-spacing:-.04em}.hero p{font-size:17px;line-height:1.8;color:#d4dde2;max-width:700px}.pills{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}.pill{padding:9px 12px;border-radius:999px;border:1px solid #ffffff35;background:#ffffff0d;font-size:12px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.ghost{display:inline-flex;padding:13px 18px;border:1px solid #ffffff45;border-radius:999px;font-size:13px}
 .section{padding:88px 0}.cream{background:var(--cream)}.dark{background:var(--navy);color:white}.head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:34px}.head h2{font:500 clamp(36px,5vw,56px)/1.08 Georgia;margin:8px 0}.head p{max-width:520px;color:var(--muted);line-height:1.7}.dark .head p{color:#9eabb4}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}.stat small{font-size:10px;color:var(--muted);letter-spacing:.15em;text-transform:uppercase}.stat strong{display:block;font:29px Georgia;margin-top:8px}
 .feature{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:stretch}.featureImg{border-radius:26px;overflow:hidden;min-height:440px;background:#ddd}.featureImg img{width:100%;height:100%;object-fit:cover}.panel{border:1px solid var(--line);border-radius:26px;padding:32px;background:#fff}.panel h3{font:31px Georgia;margin:8px 0 15px}.panel p,.panel li{color:var(--muted);line-height:1.8}.panel ul{padding-left:19px}
@@ -88,14 +88,15 @@
 <section class="section"><div class="wrap">
 <div class="head"><div><div class="eyebrow">SHOW UNIT GALLERY</div><h2>Avenia 室内空间。</h2></div><p>以下为 Sales Kit / VR Show Unit 素材，用于让顾客预览空间与装修感觉。</p></div>
 <div class="gallery">
-<div class="g wide"><img src="living-room.webp" alt="Avenia Living Room"><span class="label">Living Room</span></div>
-<div class="g"><img src="Dining%20Area.webp" alt="Avenia Dining Area"><span class="label">Dining Area</span></div>
-<div class="g"><img src="Kitchen.webp" alt="Avenia Kitchen"><span class="label">Kitchen</span></div>
-<div class="g wide"><img src="Master%20Bedroom.webp" alt="Avenia Master Bedroom"><span class="label">Master Bedroom</span></div>
-<div class="g"><img src="Bedroom%202.webp" alt="Avenia Bedroom 2"><span class="label">Bedroom 2</span></div>
-<div class="g"><img src="Bedroom%203.webp" alt="Avenia Bedroom 3"><span class="label">Bedroom 3</span></div>
-<div class="g"><img src="Bedroom%204.webp" alt="Avenia Bedroom 4"><span class="label">Bedroom 4</span></div>
-<div class="g"><img src="Bathroom.webp" alt="Avenia Bathroom"><span class="label">Bathroom</span></div>
+<div class="g wide"><img src="living-room.webp" alt="Avenia living room"><span class="label">Living Room</span></div>
+<div class="g"><img src="dining-area.webp" alt="Avenia dining area"><span class="label">Dining</span></div>
+<div class="g"><img src="study-room.webp" alt="Avenia kitchen"><span class="label">Kitchen</span></div>
+<div class="g"><img src="kitchen.webp" alt="Avenia study area"><span class="label">Study / Work Area</span></div>
+<div class="g wide"><img src="master-bedroom.webp" alt="Avenia master bedroom"><span class="label">Master Bedroom</span></div>
+<div class="g"><img src="bedroom-2.webp" alt="Avenia dining angle"><span class="label">Dining Angle</span></div>
+<div class="g"><img src="bedroom-3.webp" alt="Avenia bedroom"><span class="label">Bedroom</span></div>
+<div class="g"><img src="bathroom.webp" alt="Avenia kids bedroom"><span class="label">Kids Bedroom</span></div>
+<div class="g"><img src="kids-bedroom.webp" alt="Avenia bathroom"><span class="label">Bathroom</span></div>
 </div>
 </div></section>
 
