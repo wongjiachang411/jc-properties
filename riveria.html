@@ -3,22 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Riveria Garden @ Wawari | Avenia | JC Property</title>
-
-<meta name="description" content="Riveria Garden @ Wawari - Avenia 20x70 Double Storey Terrace House in Iskandar Puteri. Freehold Individual Title, 4 Bedrooms 4 Bathrooms, 2,219 sqft. From RM958K.">
+<title>JC Property | Johor Project Finder</title>
 
 <style>
-
 :root{
---navy:#071522;
---navy2:#0d2130;
---cream:#f4efe5;
---gold:#caa45e;
---white:#fff;
---ink:#12202b;
---muted:#6f7a82;
---line:#ddd6c9
+  --navy:#071522;
+  --navy2:#0d2130;
+  --cream:#f4efe5;
+  --gold:#caa45e;
+  --white:#fff;
+  --ink:#12202b;
+  --muted:#6f7a82;
+  --line:#ddd6c9;
 }
 
 *{box-sizing:border-box}
@@ -26,653 +22,530 @@
 html{scroll-behavior:smooth}
 
 body{
-margin:0;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
-background:#fff;
-color:var(--ink)
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:#fff;
+  color:var(--ink);
 }
 
-a{text-decoration:none;color:inherit}
-
-img{display:block}
+a{
+  text-decoration:none;
+  color:inherit;
+}
 
 .wrap{
-width:min(1160px,calc(100% - 32px));
-margin:auto
+  width:min(1160px,calc(100% - 32px));
+  margin:auto;
 }
-
 
 /* NAV */
 
 .nav{
-position:fixed;
-inset:0 0 auto;
-z-index:30;
-background:rgba(7,21,34,.92);
-backdrop-filter:blur(16px);
-border-bottom:1px solid #ffffff15
+  position:fixed;
+  inset:0 0 auto;
+  z-index:10;
+  background:rgba(7,21,34,.9);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid #ffffff16;
 }
 
 .navin{
-height:70px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-color:white
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color:white;
 }
 
-.brand{
-display:flex;
-align-items:center;
-gap:10px
+.logo{
+  display:flex;
+  gap:10px;
+  align-items:center;
 }
 
-.brand strong{
-font:30px Georgia;
-color:var(--gold)
+.logo strong{
+  font:32px Georgia;
+  color:var(--gold);
 }
 
-.brand span{
-font-size:11px;
-letter-spacing:.16em
+.logo span{
+  font-size:12px;
+  letter-spacing:.18em;
 }
 
-.back{
-font-size:12px;
-color:#d6dfe4
+.links{
+  display:flex;
+  gap:25px;
+  font-size:13px;
+  color:#d9e0e4;
 }
 
 .btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-padding:13px 18px;
-border-radius:999px;
-background:var(--gold);
-color:#0b1520;
-font-weight:800;
-font-size:13px
+  display:inline-flex;
+  padding:13px 18px;
+  border-radius:999px;
+  background:var(--gold);
+  color:#0b1520;
+  font-weight:800;
+  font-size:13px;
 }
-
 
 /* HERO */
 
 .hero{
-min-height:720px;
-padding-top:70px;
-background:
-linear-gradient(90deg,#071522f4 0%,#071522ce 50%,#07152250),
-url('riveria-hero.jpg') center/cover;
-display:flex;
-align-items:end;
-color:white
-}
+  min-height:760px;
+  background:
+  linear-gradient(90deg,#071522f5 0%,#071522dc 48%,#07152270),
+  url('avenia-exterior.webp') center/cover;
 
-.heroInner{
-padding:80px 0 68px
-}
-
-.eyebrow{
-font-size:11px;
-letter-spacing:.2em;
-font-weight:800;
-color:var(--gold);
-text-transform:uppercase
+  display:flex;
+  align-items:center;
+  color:white;
+  padding-top:72px;
 }
 
 .hero h1{
-font:500 clamp(52px,8vw,88px)/1 Georgia;
-margin:14px 0 20px;
-letter-spacing:-.04em
+  font:500 clamp(55px,8vw,92px)/1.02 Georgia;
+  margin:18px 0 24px;
+  letter-spacing:-.04em;
+}
+
+.hero h1 em{
+  font-style:normal;
+  color:var(--gold);
 }
 
 .hero p{
-font-size:17px;
-line-height:1.8;
-color:#d4dde2;
-max-width:700px
+  font-size:18px;
+  line-height:1.8;
+  color:#d0d8de;
+  max-width:650px;
 }
 
-.pills{
-display:flex;
-gap:9px;
-flex-wrap:wrap;
-margin-top:25px
+.eyebrow{
+  font-size:11px;
+  letter-spacing:.2em;
+  font-weight:800;
+  color:var(--gold);
+  text-transform:uppercase;
 }
 
-.pill{
-padding:9px 12px;
-border-radius:999px;
-border:1px solid #ffffff35;
-background:#ffffff0d;
-font-size:12px
+.routeBtns{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:32px;
 }
 
-.actions{
-display:flex;
-gap:12px;
-flex-wrap:wrap;
-margin-top:28px
+.route{
+  padding:18px 25px;
+  border:1px solid #ffffff35;
+  border-radius:15px;
+  background:#ffffff0d;
+  min-width:180px;
 }
 
-.ghost{
-display:inline-flex;
-padding:13px 18px;
-border:1px solid #ffffff45;
-border-radius:999px;
-font-size:13px
+.route b{
+  display:block;
+  font-size:22px;
 }
 
+.route small{
+  color:#b7c1c8;
+}
 
-/* GENERAL */
+/* SECTIONS */
 
 .section{
-padding:88px 0
+  padding:95px 0;
 }
 
 .cream{
-background:var(--cream)
+  background:var(--cream);
 }
 
 .dark{
-background:var(--navy);
-color:white
+  background:var(--navy);
+  color:white;
 }
 
 .head{
-display:flex;
-align-items:end;
-justify-content:space-between;
-gap:30px;
-margin-bottom:34px
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:end;
+  margin-bottom:38px;
 }
 
 .head h2{
-font:500 clamp(36px,5vw,56px)/1.08 Georgia;
-margin:8px 0
+  font:500 clamp(38px,5vw,58px)/1.08 Georgia;
+  margin:9px 0;
 }
 
 .head p{
-max-width:520px;
-color:var(--muted);
-line-height:1.7
+  max-width:500px;
+  color:var(--muted);
+  line-height:1.7;
 }
 
 .dark .head p{
-color:#9eabb4
+  color:#9cabb5;
 }
 
+/* ROUTE */
 
-/* STATS */
-
-.stats{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:14px
+.gateway{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
 }
 
-.stat{
-background:#fff;
-border:1px solid var(--line);
-border-radius:20px;
-padding:24px
+.gate{
+  border:1px solid #ffffff1c;
+  border-radius:25px;
+  padding:35px;
+  background:#ffffff08;
 }
 
-.stat small{
-font-size:10px;
-color:var(--muted);
-letter-spacing:.15em;
-text-transform:uppercase
+.gate h3{
+  font:42px Georgia;
+  margin:10px 0;
 }
 
-.stat strong{
-display:block;
-font:29px Georgia;
-margin-top:8px
+.gate p{
+  color:#aeb9c1;
+  line-height:1.7;
 }
 
-
-/* DEVELOPMENT */
-
-.feature{
-display:grid;
-grid-template-columns:1.05fr .95fr;
-gap:20px;
-align-items:stretch
+.gate ul{
+  padding-left:18px;
+  color:#d5dde2;
+  line-height:2;
 }
 
-.featureImg{
-border-radius:26px;
-overflow:hidden;
-min-height:440px;
-background:#ddd
+/* PROJECTS */
+
+.filters{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
 }
 
-.featureImg img{
-width:100%;
-height:100%;
-object-fit:cover
+.filter{
+  padding:10px 15px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  font-size:12px;
+  background:white;
 }
 
-.panel{
-border:1px solid var(--line);
-border-radius:26px;
-padding:32px;
-background:#fff;
-color:var(--ink)
+.filter.active{
+  background:var(--navy);
+  color:white;
+  border-color:var(--navy);
 }
 
-.panel h3{
-font:31px Georgia;
-margin:8px 0 15px
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
 }
 
-.panel p,
-.panel li{
-color:var(--muted);
-line-height:1.8
+.card{
+  background:white;
+  border-radius:22px;
+  overflow:hidden;
+  border:1px solid #e7e1d6;
+  box-shadow:0 14px 35px #0715220c;
 }
 
-.panel ul{
-padding-left:19px
+.photo{
+  height:240px;
+  background:linear-gradient(135deg,#23394a,#87959c);
+  position:relative;
+  overflow:hidden;
 }
 
-
-/* LOCATION */
-
-.location{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:22px;
-align-items:center
+.photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
-.map{
-border-radius:24px;
-overflow:hidden;
-border:1px solid var(--line);
-background:#fff;
-padding:10px
+.tag{
+  position:absolute;
+  top:15px;
+  left:15px;
+  background:#071522df;
+  color:white;
+  padding:7px 10px;
+  border-radius:999px;
+  font-size:10px;
+  font-weight:800;
 }
 
-.map img{
-width:100%;
-border-radius:16px
+.placeholder{
+  height:100%;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  text-align:center;
+  padding:25px;
 }
 
-.routeList{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px;
-margin-top:20px
+.placeholder b{
+  font:28px Georgia;
 }
 
-.routeItem{
-border:1px solid #ffffff18;
-background:#ffffff07;
-border-radius:18px;
-padding:18px
+.body{
+  padding:22px;
 }
 
-.routeItem b{
-display:block;
-margin-bottom:6px
+.body small{
+  color:#9a7a3c;
+  font-weight:800;
 }
 
-.routeItem span{
-color:#9eabb4;
-font-size:12px;
-line-height:1.6
+.body h3{
+  font:500 27px Georgia;
+  margin:8px 0 10px;
 }
 
-
-/* FLOOR PLAN */
-
-.plan{
-display:grid;
-grid-template-columns:1.15fr .85fr;
-gap:22px;
-align-items:center
+.meta{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.65;
+  min-height:43px;
 }
 
-.planImg{
-background:#fff;
-border:1px solid var(--line);
-border-radius:24px;
-padding:12px
+.price{
+  margin-top:20px;
+  padding-top:16px;
+  border-top:1px solid #eee8de;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
 }
 
-.planImg img{
-width:100%;
-border-radius:16px
+.price strong{
+  font:24px Georgia;
 }
 
-.listCards{
-display:grid;
-gap:12px
+.project-link{
+  font-size:12px;
+  font-weight:800;
+  color:#9a7736;
+  white-space:nowrap;
 }
 
-.mini{
-border:1px solid var(--line);
-border-radius:18px;
-background:#fff;
-padding:20px
+/* MATCH */
+
+.quiz{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:60px;
+  align-items:center;
 }
 
-.mini b{
-font-size:14px
+.quiz h2{
+  font:52px Georgia;
+  margin:10px 0;
 }
 
-.mini p{
-margin:8px 0 0;
-color:var(--muted);
-font-size:13px;
-line-height:1.65
+.qbox{
+  background:white;
+  border-radius:25px;
+  padding:32px;
+  box-shadow:0 18px 50px #07152212;
 }
 
-
-/* GALLERY */
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:12px
+.q{
+  margin-bottom:22px;
 }
 
-.g{
-border-radius:20px;
-overflow:hidden;
-background:#ddd;
-height:300px;
-position:relative
+.q b{
+  font-size:13px;
 }
 
-.g.wide{
-grid-column:span 2
+.chips{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:10px;
 }
 
-.g img{
-width:100%;
-height:100%;
-object-fit:cover
+.chip{
+  border:1px solid #ddd;
+  border-radius:999px;
+  padding:9px 12px;
+  font-size:12px;
 }
 
-.label{
-position:absolute;
-left:12px;
-bottom:12px;
-background:#071522df;
-color:#fff;
-padding:7px 10px;
-border-radius:999px;
-font-size:10px
+.chip.sel{
+  background:var(--navy);
+  color:white;
 }
 
+/* WHY JC */
 
-/* CLUB */
-
-.club{
-display:grid;
-grid-template-columns:1.15fr .85fr;
-gap:22px;
-align-items:center
+.why{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
 }
 
-.clubImg{
-border-radius:24px;
-overflow:hidden
+.why div{
+  border:1px solid #ffffff18;
+  border-radius:20px;
+  padding:25px;
+  background:#ffffff07;
 }
 
-.clubImg img{
-width:100%
+.why span{
+  color:var(--gold);
+  font:30px Georgia;
 }
 
-.facilityGrid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px
+.why h3{
+  font-size:16px;
 }
 
-.facility{
-border:1px solid #ffffff18;
-border-radius:17px;
-padding:17px;
-background:#ffffff07
+.why p{
+  color:#9eabb4;
+  font-size:13px;
+  line-height:1.7;
 }
-
-.facility b{
-font-size:13px
-}
-
-.facility div{
-color:#a7b3ba;
-font-size:11px;
-margin-top:5px
-}
-
-
-/* PRICE */
-
-.priceGrid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px
-}
-
-.priceHero{
-border-radius:26px;
-background:var(--navy);
-color:#fff;
-padding:32px
-}
-
-.priceHero .big{
-font:52px Georgia;
-color:var(--gold);
-margin:10px 0
-}
-
-.priceHero p{
-color:#b2bec5;
-line-height:1.7
-}
-
-.priceImg{
-border:1px solid var(--line);
-background:#fff;
-border-radius:24px;
-padding:10px
-}
-
-.priceImg img{
-width:100%;
-border-radius:16px
-}
-
-
-/* PACKAGE */
-
-.packageGrid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:16px
-}
-
-.packageCard{
-background:#fff;
-border:1px solid var(--line);
-border-radius:24px;
-padding:10px
-}
-
-.packageCard img{
-width:100%;
-border-radius:16px
-}
-
-.packageCard h3{
-font:25px Georgia;
-margin:18px 14px 6px
-}
-
-.packageCard p{
-margin:0 14px 18px;
-color:var(--muted);
-font-size:12px;
-line-height:1.65
-}
-
-
-/* MEMBERSHIP */
-
-.membership{
-display:grid;
-grid-template-columns:1fr .9fr;
-gap:20px;
-align-items:center
-}
-
-.membershipImg{
-background:#fff;
-border:1px solid var(--line);
-border-radius:24px;
-padding:10px
-}
-
-.membershipImg img{
-width:100%;
-border-radius:16px
-}
-
 
 /* CTA */
 
 .cta{
-text-align:center;
-padding:90px 20px;
-background:var(--cream)
+  text-align:center;
+  padding:95px 20px;
+  background:var(--cream);
 }
 
 .cta h2{
-font:48px Georgia;
-margin:9px auto 18px;
-max-width:760px
+  font:52px Georgia;
+  margin:10px auto 20px;
+  max-width:760px;
 }
 
 .cta p{
-color:var(--muted);
-line-height:1.7
+  color:var(--muted);
+  margin-bottom:28px;
 }
-
 
 /* FOOTER */
 
 .foot{
-background:#040e16;
-color:#87949d;
-padding:30px 0;
-font-size:11px
+  padding:35px 0;
+  background:#040e16;
+  color:#84919a;
+  font-size:11px;
 }
 
 .footin{
-display:flex;
-justify-content:space-between;
-gap:20px
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
 }
+
+/* FLOAT */
 
 .float{
-position:fixed;
-right:18px;
-bottom:18px;
-width:58px;
-height:58px;
-border-radius:50%;
-background:var(--gold);
-display:grid;
-place-items:center;
-font-weight:900;
-box-shadow:0 12px 30px #0004;
-z-index:40
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  background:var(--gold);
+  display:grid;
+  place-items:center;
+  font-weight:900;
+  box-shadow:0 12px 28px #0004;
+  z-index:20;
 }
-
 
 /* MOBILE */
 
-@media(max-width:900px){
+@media(max-width:850px){
 
-.stats{
-grid-template-columns:1fr 1fr
-}
+  .links{
+    display:none;
+  }
 
-.feature,
-.location,
-.plan,
-.club,
-.priceGrid,
-.membership{
-grid-template-columns:1fr
-}
+  .hero{
+    min-height:700px;
+  }
 
-.gallery{
-grid-template-columns:1fr 1fr
-}
+  .head{
+    display:block;
+  }
 
-.packageGrid{
-grid-template-columns:1fr
-}
+  .grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gateway,
+  .quiz{
+    grid-template-columns:1fr;
+  }
+
+  .why{
+    grid-template-columns:1fr 1fr;
+  }
 
 }
 
 @media(max-width:560px){
 
-.wrap{
-width:min(100% - 24px,1160px)
-}
+  .wrap{
+    width:min(100% - 24px,1160px);
+  }
 
-.back{
-display:none
-}
+  .hero{
+    min-height:650px;
+  }
 
-.hero{
-min-height:650px
-}
+  .hero h1{
+    font-size:50px;
+  }
 
-.hero h1{
-font-size:49px
-}
+  .hero p{
+    font-size:15px;
+  }
 
-.section{
-padding:68px 0
-}
+  .section{
+    padding:70px 0;
+  }
 
-.head{
-display:block
-}
+  .grid{
+    grid-template-columns:1fr;
+  }
 
-.gallery{
-grid-template-columns:1fr
-}
+  .photo{
+    height:220px;
+  }
 
-.g.wide{
-grid-column:auto
-}
+  .why{
+    grid-template-columns:1fr 1fr;
+  }
 
-.g{
-height:260px
-}
+  .quiz h2,
+  .cta h2{
+    font-size:40px;
+  }
 
-.facilityGrid,
-.routeList{
-grid-template-columns:1fr
-}
+  .footin{
+    display:block;
+  }
 
-.footin{
-display:block
-}
-
-.footin div+div{
-margin-top:8px
-}
+  .footin div+div{
+    margin-top:10px;
+  }
 
 }
 
@@ -681,29 +554,36 @@ margin-top:8px
 
 <body>
 
-
-<!-- NAVIGATION -->
-
 <header class="nav">
 
 <div class="wrap navin">
 
-<a class="brand" href="index.html">
+<a class="logo" href="#top">
+
 <strong>JC</strong>
+
 <span>
 PROPERTY<br>
-JOHOR PROJECT FINDER
+<small>JOHOR PROJECT FINDER</small>
 </span>
+
 </a>
 
-<a class="back" href="index.html">
-← 返回全部项目
-</a>
+<nav class="links">
+
+<a href="#gateway">CIQ / TUAS</a>
+<a href="#projects">全部项目</a>
+<a href="#match">帮我选房</a>
+<a href="#about">关于 JC</a>
+
+</nav>
 
 <a class="btn"
-href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Riveria%20Garden%20Avenia."
+href="https://wa.me/60127743554"
 target="_blank">
+
 WhatsApp JC
+
 </a>
 
 </div>
@@ -711,47 +591,42 @@ WhatsApp JC
 </header>
 
 
-
 <!-- HERO -->
 
-<section class="hero">
+<section id="top" class="hero">
 
-<div class="wrap heroInner">
+<div class="wrap">
 
 <div class="eyebrow">
-ISKANDAR PUTERI · TUAS / SECOND LINK
+JOHOR PROPERTY · CURATED BY JC
 </div>
 
 <h1>
-Riveria Garden<br>
-@ Wawari
+新山买房，<br>
+先选你每天走的<em>关卡。</em>
 </h1>
 
 <p>
-Avenia 20×70 Double Storey Terrace House。Freehold Individual Title，
-适合寻找 Iskandar Puteri 有地住宅与 Second Link 通勤路线的买家。
+不需要一个项目一个项目慢慢找。
+根据 CIQ / Woodlands 或 TUAS / Second Link 通勤路线，
+直接筛选更适合你的 Johor 房产。
 </p>
 
-<div class="pills">
+<div class="routeBtns">
 
-<span class="pill">20×70</span>
-<span class="pill">4房 4厕</span>
-<span class="pill">2,219 sqft</span>
-<span class="pill">Freehold</span>
-<span class="pill">Individual Title</span>
-
-</div>
-
-<div class="actions">
-
-<a class="btn"
-href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Riveria%20Garden%20Avenia."
-target="_blank">
-询问最新单位
+<a class="route" href="#projects">
+<b>CIQ</b>
+<small>Woodlands · JB City</small>
 </a>
 
-<a class="ghost" href="#overview">
-查看完整资料 ↓
+<a class="route" href="#projects">
+<b>TUAS</b>
+<small>Second Link · Iskandar Puteri</small>
+</a>
+
+<a class="route" href="#projects">
+<b>ALL</b>
+<small>查看全部项目</small>
 </a>
 
 </div>
@@ -761,10 +636,9 @@ target="_blank">
 </section>
 
 
+<!-- ROUTE -->
 
-<!-- OVERVIEW -->
-
-<section id="overview" class="section cream">
+<section id="gateway" class="section dark">
 
 <div class="wrap">
 
@@ -773,687 +647,75 @@ target="_blank">
 <div>
 
 <div class="eyebrow">
-AVENIA OVERVIEW
+START WITH YOUR ROUTE
 </div>
 
 <h2>
-先看最重要的资料。
+你平时走哪一个关卡？
 </h2>
 
 </div>
 
 <p>
-Avenia 为 20×70 Double Storey Terrace House，
-网站价格按最新确认的 RM958K 起展示。
+网站不是把项目全部堆给你，
+而是先从实际通勤方式开始筛选。
 </p>
 
 </div>
 
 
-<div class="stats">
+<div class="gateway">
 
-<div class="stat">
-<small>Land Size</small>
-<strong>20×70</strong>
-</div>
-
-<div class="stat">
-<small>Built-up</small>
-<strong>2,219 sqft</strong>
-</div>
-
-<div class="stat">
-<small>Layout</small>
-<strong>4R 4B</strong>
-</div>
-
-<div class="stat">
-<small>From</small>
-<strong>RM958K</strong>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- DEVELOPMENT -->
-
-<section class="section">
-
-<div class="wrap">
-
-<div class="feature">
-
-<div class="featureImg">
-
-<img
-src="avenia-exterior.webp"
-alt="Riveria Garden Avenia exterior">
-
-</div>
-
-
-<div class="panel">
+<div class="gate">
 
 <div class="eyebrow">
-DEVELOPMENT BRIEF
+WOODLANDS ROUTE
 </div>
 
 <h3>
-Riveria Garden @ Wawari
+CIQ
 </h3>
+
+<p>
+适合经常往返 JB City / Woodlands，
+以及想靠近市区成熟生活圈的买家。
+</p>
 
 <ul>
 
-<li>Developer: Wawari Sdn Bhd</li>
-<li>District: Johor Bahru</li>
-<li>Mukim: Pulai</li>
-<li>Freehold</li>
-<li>Individual Title</li>
-<li>Double Storey Terrace House</li>
-<li>Avenia / Phase L4</li>
+<li>JB City / RTS Catchment</li>
+<li>Tebrau / Permas 方向</li>
+<li>Condo & City Living</li>
 
 </ul>
 
-<p>
-主要卖点集中在 Second Link 通勤、
-Iskandar Puteri 生活圈、河畔环境与社区设施。
-</p>
-
 </div>
 
-</div>
 
-</div>
-
-</section>
-
-
-
-<!-- LOCATION -->
-
-<section class="section dark">
-
-<div class="wrap">
-
-<div class="head">
-
-<div>
+<div class="gate">
 
 <div class="eyebrow">
-LOCATION & CONNECTIVITY
+SECOND LINK ROUTE
 </div>
-
-<h2>
-靠近 Second Link 的<br>
-Iskandar Puteri 生活圈。
-</h2>
-
-</div>
-
-<p>
-Sales Kit 显示项目可连接多条主要高速公路，
-并靠近成熟商业、教育与医疗设施。
-</p>
-
-</div>
-
-
-<div class="location">
-
-<div class="map">
-
-<img
-src="location-map.webp"
-alt="Riveria Garden location map">
-
-</div>
-
-
-<div class="routeList">
-
-<div class="routeItem">
-
-<b>
-Iskandar Coastal Highway
-</b>
-
-<span>
-连接 Iskandar Puteri / Johor Bahru 主要区域。
-</span>
-
-</div>
-
-
-<div class="routeItem">
-
-<b>
-Second Link Expressway
-</b>
-
-<span>
-适合 TUAS / Second Link 通勤路线。
-</span>
-
-</div>
-
-
-<div class="routeItem">
-
-<b>
-Pasir Gudang–Perling Highway
-</b>
-
-<span>
-连接 Johor 多个成熟生活圈。
-</span>
-
-</div>
-
-
-<div class="routeItem">
-
-<b>
-North–South Expressway
-</b>
-
-<span>
-衔接更广泛的公路网络。
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- FLOOR PLAN -->
-
-<section class="section cream">
-
-<div class="wrap">
-
-<div class="head">
-
-<div>
-
-<div class="eyebrow">
-FLOOR PLAN
-</div>
-
-<h2>
-20×70 · 4房4厕。
-</h2>
-
-</div>
-
-<p>
-Ground Floor 与 First Floor 规划放在同一张图，
-让顾客一眼看到整体空间配置。
-</p>
-
-</div>
-
-
-<div class="plan">
-
-<div class="planImg">
-
-<img
-src="floor-plan.webp"
-alt="Avenia floor plan">
-
-</div>
-
-
-<div class="listCards">
-
-<div class="mini">
-
-<b>
-Ground Floor
-</b>
-
-<p>
-Living、Dining、Kitchen、Bedroom 4、
-Bath 4、Yard 与 Car Porch。
-</p>
-
-</div>
-
-
-<div class="mini">
-
-<b>
-First Floor
-</b>
-
-<p>
-Master Bedroom、Bedroom 2、Bedroom 3、
-Family Hall、Balcony 与 Bathrooms。
-</p>
-
-</div>
-
-
-<div class="mini">
-
-<b>
-Built-up
-</b>
-
-<p>
-2,219 sqft · Double Storey Terrace House。
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- SHOW UNIT GALLERY -->
-
-<section class="section">
-
-<div class="wrap">
-
-<div class="head">
-
-<div>
-
-<div class="eyebrow">
-SHOW UNIT GALLERY
-</div>
-
-<h2>
-Avenia 室内空间。
-</h2>
-
-</div>
-
-<p>
-以下为 Sales Kit / VR Show Unit 素材，
-用于让顾客预览空间与装修感觉。
-</p>
-
-</div>
-
-
-<div class="gallery">
-
-
-<!-- LIVING ROOM -->
-
-<div class="g wide">
-
-<img
-src="living-room.webp"
-alt="Avenia Living Room">
-
-<span class="label">
-Living Room
-</span>
-
-</div>
-
-
-
-<!-- DINING AREA -->
-
-<div class="g">
-
-<img
-src="Dining Area.webp"
-alt="Avenia Dining Area">
-
-<span class="label">
-Dining Area
-</span>
-
-</div>
-
-
-
-<!-- KITCHEN -->
-
-<div class="g">
-
-<img
-src="Kitchen.webp"
-alt="Avenia Kitchen">
-
-<span class="label">
-Kitchen
-</span>
-
-</div>
-
-
-
-<!-- BEDROOM 4 -->
-
-<div class="g">
-
-<img
-src="Bedroom 4.webp"
-alt="Avenia Bedroom 4">
-
-<span class="label">
-Bedroom 4
-</span>
-
-</div>
-
-
-
-<!-- MASTER BEDROOM -->
-
-<div class="g wide">
-
-<img
-src="Master Bedroom.webp"
-alt="Avenia Master Bedroom">
-
-<span class="label">
-Master Bedroom
-</span>
-
-</div>
-
-
-
-<!-- BEDROOM 2 -->
-
-<div class="g">
-
-<img
-src="Bedroom 2.webp"
-alt="Avenia Bedroom 2">
-
-<span class="label">
-Bedroom 2
-</span>
-
-</div>
-
-
-
-<!-- BEDROOM 3 -->
-
-<div class="g">
-
-<img
-src="Bedroom 3.webp"
-alt="Avenia Bedroom 3">
-
-<span class="label">
-Bedroom 3
-</span>
-
-</div>
-
-
-
-<!-- BATHROOM -->
-
-<div class="g">
-
-<img
-src="Bathroom.webp"
-alt="Avenia Bathroom">
-
-<span class="label">
-Bathroom
-</span>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- CLUBHOUSE -->
-
-<section class="section dark">
-
-<div class="wrap">
-
-<div class="head">
-
-<div>
-
-<div class="eyebrow">
-THE WAWARI CLUB
-</div>
-
-<h2>
-社区 Clubhouse 与生活设施。
-</h2>
-
-</div>
-
-<p>
-Sales Kit 列出的设施涵盖运动、休闲、
-工作与社交空间。
-</p>
-
-</div>
-
-
-<div class="club">
-
-<div class="clubImg">
-
-<img
-src="clubhouse.webp"
-alt="The Wawari Club">
-
-</div>
-
-
-<div class="facilityGrid">
-
-<div class="facility">
-<b>Swimming Pool</b>
-<div>休闲与日常运动</div>
-</div>
-
-<div class="facility">
-<b>Gym</b>
-<div>Fitness facilities</div>
-</div>
-
-<div class="facility">
-<b>Badminton Courts</b>
-<div>Indoor sports</div>
-</div>
-
-<div class="facility">
-<b>Pickleball Courts</b>
-<div>Popular racquet sport</div>
-</div>
-
-<div class="facility">
-<b>Co-working Lounge</b>
-<div>工作与社交空间</div>
-</div>
-
-<div class="facility">
-<b>Event Hall / Sauna</b>
-<div>社区活动与休闲</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- PRICE -->
-
-<section class="section cream">
-
-<div class="wrap">
-
-<div class="head">
-
-<div>
-
-<div class="eyebrow">
-PRICE & UNIT MIX
-</div>
-
-<h2>
-Avenia L4(a)(i)
-</h2>
-
-</div>
-
-<p>
-Pricing Summary 显示 L4(a)(i) 共 165 个单位：
-Intermediate、End Lot 与 Corner Lot。
-</p>
-
-</div>
-
-
-<div class="priceGrid">
-
-<div class="priceHero">
-
-<div class="eyebrow">
-PRICE FROM
-</div>
-
-<div class="big">
-RM958K
-</div>
-
-<p>
-20×70 · 2,219 sqft · 4房4厕 ·
-Freehold Individual Title
-</p>
-
-<a class="btn"
-href="https://wa.me/60127743554?text=Hi%20JC%2C%20please%20send%20me%20the%20latest%20Avenia%20price%20list%20and%20available%20units."
-target="_blank">
-
-拿最新 Price List
-
-</a>
-
-</div>
-
-
-<div class="priceImg">
-
-<img
-src="pricing-summary.webp"
-alt="Avenia pricing summary">
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- SALES PACKAGE -->
-
-<section class="section">
-
-<div class="wrap">
-
-<div class="head">
-
-<div>
-
-<div class="eyebrow">
-SALES PACKAGE
-</div>
-
-<h2>
-Avenia Package
-</h2>
-
-</div>
-
-<p>
-以下保留 Sales Kit 的 Local 与 Foreigner package 图；
-最终价格、rebate、费用与资格以发展商最新确认资料为准。
-</p>
-
-</div>
-
-
-<div class="packageGrid">
-
-
-<div class="packageCard">
-
-<img
-src="sales-package-local.webp"
-alt="Avenia local sales package">
 
 <h3>
-Local Package
+TUAS
 </h3>
 
 <p>
-Booking Fee、SPA rebate、legal / stamp package
-与 Wawari Club Membership
-以图示及最新发展商条款为准。
+适合 Tuas / Jurong 工作族，
+以及偏好 Iskandar Puteri、Nusajaya 一带的买家。
 </p>
 
-</div>
+<ul>
 
+<li>Bukit Indah / Nusajaya</li>
+<li>Iskandar Puteri</li>
+<li>Landed Property</li>
 
-<div class="packageCard">
-
-<img
-src="sales-package-foreigner.webp"
-alt="Avenia foreigner sales package">
-
-<h3>
-Foreigner Package
-</h3>
-
-<p>
-Foreigner package 与相关 legal / rebate
-条款以发展商最新确认资料为准。
-</p>
+</ul>
 
 </div>
-
 
 </div>
 
@@ -1462,10 +724,9 @@ Foreigner package 与相关 legal / rebate
 </section>
 
 
+<!-- PROJECTS -->
 
-<!-- CLUB MEMBERSHIP -->
-
-<section class="section cream">
+<section id="projects" class="section cream">
 
 <div class="wrap">
 
@@ -1474,52 +735,78 @@ Foreigner package 与相关 legal / rebate
 <div>
 
 <div class="eyebrow">
-CLUB MEMBERSHIP
+JC'S PROJECT COLLECTION
 </div>
 
 <h2>
-The Wawari Club Membership
+全部项目，一次看。
 </h2>
 
 </div>
 
 <p>
-Sales Kit 列出 Riveria Garden purchaser 的
-membership package；相关 annual subscription
-与续费规则以管理方最新条款为准。
+先根据地区、通勤路线和房产类型找到适合你的项目，
+再进入完整项目页面查看详细资料。
 </p>
 
 </div>
 
 
-<div class="membership">
+<div class="filters">
 
-<div class="membershipImg">
+<span class="filter active">全部</span>
+<span class="filter">CIQ</span>
+<span class="filter">TUAS</span>
+<span class="filter">Landed</span>
+<span class="filter">Condo</span>
+
+</div>
+
+
+<div class="grid">
+
+
+<!-- RIVERIA -->
+
+<div class="card">
+
+<div class="photo">
 
 <img
-src="wawari-club-membership.webp"
-alt="Wawari Club membership">
+src="avenia-exterior.webp"
+alt="Riveria Garden Avenia">
+
+<span class="tag">
+TUAS · LANDED
+</span>
 
 </div>
 
+<div class="body">
 
-<div class="panel">
+<small>
+ISKANDAR PUTERI
+</small>
 
 <h3>
-Membership 信息
+Riveria Garden · Avenia
 </h3>
 
-<p>
-页面保留官方 Sales Kit 的 membership fee、
-annual subscription 与 purchaser entitlement 图表。
-顾客需要进一步确认时可直接 WhatsApp JC。
-</p>
+<div class="meta">
+Freehold Individual Title ·
+20×70 · 4房4厕 · Build-up 2,219 sqft
+</div>
 
-<a class="btn"
-href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20The%20Wawari%20Club%20membership."
-target="_blank">
+<div class="price">
 
-询问 Club Package
+<strong>
+RM958K 起
+</strong>
+
+<a class="project-link"
+href="riveria.html">
+
+查看完整资料 →
 
 </a>
 
@@ -1529,29 +816,586 @@ target="_blank">
 
 </div>
 
+
+<!-- AURORA -->
+
+<div class="card">
+
+<div class="photo">
+
+<div class="placeholder">
+
+<div>
+
+<b>
+Aurora
+</b>
+
+<br>
+
+<small>
+Project photo coming soon
+</small>
+
+</div>
+
+</div>
+
+<span class="tag">
+JOHOR · LANDED
+</span>
+
+</div>
+
+<div class="body">
+
+<small>
+LEGACY VALLEY
+</small>
+
+<h3>
+Aurora
+</h3>
+
+<div class="meta">
+Freehold Individual Title ·
+20×70 · 4房4厕
+</div>
+
+<div class="price">
+
+<strong>
+RM868K 起
+</strong>
+
+<a class="project-link"
+href="https://wa.me/60127743554"
+target="_blank">
+
+咨询 JC →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- M TIARA -->
+
+<div class="card">
+
+<div class="photo">
+
+<div class="placeholder">
+
+<div>
+
+<b>
+M Tiara
+</b>
+
+<br>
+
+<small>
+Project photo coming soon
+</small>
+
+</div>
+
+</div>
+
+<span class="tag">
+SKUDAI · LANDED
+</span>
+
+</div>
+
+<div class="body">
+
+<small>
+MAH SING
+</small>
+
+<h3>
+M Tiara
+</h3>
+
+<div class="meta">
+2-Storey Terrace / Cluster ·
+Gated & Guarded
+</div>
+
+<div class="price">
+
+<strong>
+资料更新中
+</strong>
+
+<a class="project-link"
+href="https://wa.me/60127743554"
+target="_blank">
+
+咨询 JC →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- NUSA PERMATA -->
+
+<div class="card">
+
+<div class="photo">
+
+<div class="placeholder">
+
+<div>
+
+<b>
+Nusa Permata
+</b>
+
+<br>
+
+<small>
+Project photo coming soon
+</small>
+
+</div>
+
+</div>
+
+<span class="tag">
+TUAS · LANDED
+</span>
+
+</div>
+
+<div class="body">
+
+<small>
+NUSA SENTRAL
+</small>
+
+<h3>
+Nusa Permata
+</h3>
+
+<div class="meta">
+Individual Title ·
+20×65 / 20×70 / 22×70
+</div>
+
+<div class="price">
+
+<strong>
+RM852K 起
+</strong>
+
+<a class="project-link"
+href="https://wa.me/60127743554"
+target="_blank">
+
+咨询 JC →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- NUSA MELATI -->
+
+<div class="card">
+
+<div class="photo">
+
+<div class="placeholder">
+
+<div>
+
+<b>
+Nusa Melati
+</b>
+
+<br>
+
+<small>
+Project photo coming soon
+</small>
+
+</div>
+
+</div>
+
+<span class="tag">
+TUAS · LANDED
+</span>
+
+</div>
+
+<div class="body">
+
+<small>
+ISKANDAR PUTERI
+</small>
+
+<h3>
+Nusa Melati
+</h3>
+
+<div class="meta">
+20×70 / 23×70 ·
+Double Storey Landed
+</div>
+
+<div class="price">
+
+<strong>
+RM935K 起
+</strong>
+
+<a class="project-link"
+href="https://wa.me/60127743554"
+target="_blank">
+
+咨询 JC →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ASCENT PARK -->
+
+<div class="card">
+
+<div class="photo">
+
+<div class="placeholder">
+
+<div>
+
+<b>
+Ascent Park
+</b>
+
+<br>
+
+<small>
+Project photo coming soon
+</small>
+
+</div>
+
+</div>
+
+<span class="tag">
+TUAS · LANDED
+</span>
+
+</div>
+
+<div class="body">
+
+<small>
+ISKANDAR PUTERI
+</small>
+
+<h3>
+Ascent Park
+</h3>
+
+<div class="meta">
+Mix Development ·
+Terrace / 3 Storey / Shoplot
+</div>
+
+<div class="price">
+
+<strong>
+RM900K+ 起
+</strong>
+
+<a class="project-link"
+href="https://wa.me/60127743554"
+target="_blank">
+
+咨询 JC →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
 </section>
 
 
+<!-- MATCH -->
 
-<!-- CTA -->
+<section id="match" class="section">
 
-<section class="cta">
+<div class="wrap quiz">
+
+<div>
 
 <div class="eyebrow">
-CONTACT JC
+PROJECT MATCH
 </div>
 
 <h2>
-想看 Riveria 最新单位、方向和付款方案？
+不知道哪一个项目适合你？
+</h2>
+
+<p style="color:var(--muted);line-height:1.8">
+告诉我你的预算、通勤路线和想找的房型，
+我可以直接帮你从这些项目里面筛选。
+</p>
+
+</div>
+
+
+<div class="qbox">
+
+<div class="q">
+
+<b>
+1. 你平时走哪个关卡？
+</b>
+
+<div class="chips">
+
+<span class="chip">
+CIQ
+</span>
+
+<span class="chip sel">
+TUAS
+</span>
+
+<span class="chip">
+不确定
+</span>
+
+</div>
+
+</div>
+
+
+<div class="q">
+
+<b>
+2. 预算？
+</b>
+
+<div class="chips">
+
+<span class="chip">
+RM500k 以下
+</span>
+
+<span class="chip">
+RM500k–800k
+</span>
+
+<span class="chip sel">
+RM800k–1M
+</span>
+
+<span class="chip">
+RM1M+
+</span>
+
+</div>
+
+</div>
+
+
+<div class="q">
+
+<b>
+3. 想买什么？
+</b>
+
+<div class="chips">
+
+<span class="chip sel">
+Landed
+</span>
+
+<span class="chip">
+Condo
+</span>
+
+<span class="chip">
+都可以
+</span>
+
+</div>
+
+</div>
+
+
+<a class="btn"
+href="https://wa.me/60127743554"
+target="_blank"
+style="width:100%;justify-content:center">
+
+WhatsApp JC 获取推荐
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="section dark">
+
+<div class="wrap">
+
+<div class="head">
+
+<div>
+
+<div class="eyebrow">
+WHY JC PROPERTY
+</div>
+
+<h2>
+不是给你最多项目，<br>
+是帮你筛掉不适合的。
+</h2>
+
+</div>
+
+</div>
+
+
+<div class="why">
+
+<div>
+
+<span>
+01
+</span>
+
+<h3>
+先看需求
+</h3>
+
+<p>
+预算、用途、通勤路线先搞清楚，
+再开始看项目。
+</p>
+
+</div>
+
+
+<div>
+
+<span>
+02
+</span>
+
+<h3>
+CIQ / TUAS 分类
+</h3>
+
+<p>
+用实际跨境路线来整理 Johor 项目，
+更容易比较。
+</p>
+
+</div>
+
+
+<div>
+
+<span>
+03
+</span>
+
+<h3>
+项目比较
+</h3>
+
+<p>
+地点、户型、价格与项目卖点集中比较。
+</p>
+
+</div>
+
+
+<div>
+
+<span>
+04
+</span>
+
+<h3>
+一对一咨询
+</h3>
+
+<p>
+从筛选、看房到后续流程，
+都可以直接联系 JC。
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="cta">
+
+<div class="eyebrow">
+JC PROPERTY
+</div>
+
+<h2>
+告诉我你的工作地点、预算和想找的房型。
 </h2>
 
 <p>
-直接 WhatsApp JC，我可以根据预算、
-用途与通勤路线帮你筛 Avenia 单位。
+我帮你从手上的 Johor 项目里面先筛一轮。
 </p>
 
 <a class="btn"
-href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Riveria%20Garden%20Avenia."
+href="https://wa.me/60127743554"
 target="_blank">
 
 WhatsApp JC
@@ -1561,15 +1405,12 @@ WhatsApp JC
 </section>
 
 
-
-<!-- FOOTER -->
-
 <footer class="foot">
 
 <div class="wrap footin">
 
 <div>
-JC PROPERTY · RIVERIA GARDEN @ WAWARI
+JC PROPERTY · JOHOR PROJECT FINDER
 </div>
 
 <div>
@@ -1582,18 +1423,13 @@ JC PROPERTY · RIVERIA GARDEN @ WAWARI
 </footer>
 
 
-
-<!-- FLOATING WHATSAPP -->
-
-<a
-class="float"
-href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20Riveria%20Garden%20Avenia."
+<a class="float"
+href="https://wa.me/60127743554"
 target="_blank">
 
 WA
 
 </a>
-
 
 </body>
 </html>
