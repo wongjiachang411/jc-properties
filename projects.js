@@ -14,7 +14,7 @@ const projects = [
     name: "Aurora",
     area: "BESTARI INDAH",
     price: "RM848K 起",
-    meta: "Freehold Individual Title · 20×70 · 4房4厕 · Build-up 约 2,331 sqft",
+    meta: "Freehold Individual Title · 20×70 · 4房4厕 · Build-up 2,331 sqft",
     image: "",
     page: "aurora.html",
     tag: "JOHOR · LANDED",
@@ -43,4 +43,25 @@ const projects = [
     tags: ["TUAS", "LANDED"]
   },
 
-  
+  {
+    name: "Nusa Melati",
+    area: "ISKANDAR PUTERI",
+    price: "咨询最新价格",
+    meta: "20×70 / 23×70 · Double Storey Landed",
+    image: "",
+    page: "",
+    tag: "TUAS · LANDED",
+    tags: ["TUAS", "LANDED"]
+  },
+
+  {
+    name: "Ascent Park",
+    area: "ISKANDAR PUTERI",
+    price: "咨询最新价格",
+    meta: "Mix Development · Terrace / 3 Storey / Shoplot",
+    image: "",
+    page: "",
+    tag: "TUAS · LANDED",
+    tags: ["TUAS", "LANDED"]
+  }
+];
