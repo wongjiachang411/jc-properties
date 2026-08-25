@@ -15,7 +15,7 @@ const projects = [
     area: "BESTARI INDAH",
     price: "RM848K 起",
     meta: "Freehold Individual Title · 20×70 · 4房4厕 · Build-up 2,331 sqft",
-    image: "",
+    image: "aurora-exterior.jpg",
     page: "aurora.html",
     tag: "JOHOR · LANDED",
     tags: ["LANDED"]
