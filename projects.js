@@ -21,15 +21,17 @@ const projects = [
     tags: ["LANDED"]
   },
 
-  {
-    name: "M Tiara",
-    area: "SKUDAI",
-    price: "资料更新中",
-    meta: "2-Storey Terrace / Cluster · Gated & Guarded",
-    image: "",
-    page: "",
-    tag: "SKUDAI · LANDED",
-    tags: ["LANDED"]
+  
+   {
+  name: "M Tiara",
+  area: "SKUDAI",
+  price: "RM879K 起",
+  meta: "Freehold · Gated & Guarded · 20×70 / 22×70 / 32×70 Cluster",
+  image: "",
+  page: "mtiara.html",
+  tag: "SKUDAI · LANDED",
+  tags: ["LANDED"]
+
   },
 
   {
