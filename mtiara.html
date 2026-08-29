@@ -35,14 +35,7 @@ html{
 
 body{
   margin:0;
-  font-family:
-  -apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  "PingFang SC",
-  "Microsoft YaHei",
-  sans-serif;
-
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
   background:#fff;
   color:var(--ink);
 }
@@ -64,7 +57,7 @@ img{
 
 
 /* =========================
-NAVIGATION
+NAV
 ========================= */
 
 .nav{
@@ -73,20 +66,16 @@ NAVIGATION
   left:0;
   right:0;
   z-index:100;
-
-  background:rgba(7,21,34,.94);
-  backdrop-filter:blur(16px);
-
+  background:rgba(7,21,34,.96);
+  backdrop-filter:blur(14px);
   border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .navin{
   height:70px;
-
   display:flex;
   align-items:center;
   justify-content:space-between;
-
   color:white;
 }
 
@@ -116,175 +105,126 @@ NAVIGATION
   display:inline-flex;
   align-items:center;
   justify-content:center;
-
   padding:13px 19px;
-
   border-radius:999px;
-
   background:var(--gold);
   color:#0b1520;
-
   font-weight:800;
   font-size:13px;
-
-  transition:.2s ease;
-}
-
-.btn:hover{
-  transform:translateY(-1px);
 }
 
 .ghost{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-
   padding:13px 18px;
-
   border:1px solid rgba(255,255,255,.35);
   border-radius:999px;
-
   font-size:13px;
   color:white;
 }
 
 
 /* =========================
-HERO
+NEW HERO
 ========================= */
 
 .hero{
   position:relative;
-
-  min-height:730px;
-
-  padding-top:70px;
-
-  display:flex;
-  align-items:flex-end;
-
-  color:white;
-
+  margin-top:70px;
+  background:#071522;
   overflow:hidden;
-
-  background:var(--navy);
 }
 
+.heroImage{
+  position:relative;
+  width:100%;
+  height:680px;
+  overflow:hidden;
+}
 
-/* REAL IMAGE — NOT CSS BACKGROUND */
-
-.heroBg{
-  position:absolute;
-
-  top:0;
-  left:0;
-
+.heroImage img{
   width:100%;
   height:100%;
-
   object-fit:cover;
   object-position:center center;
-
-  z-index:0;
 }
 
-
-/* DARK OVERLAY */
-
-.heroOverlay{
+.heroShade{
   position:absolute;
   inset:0;
-
-  z-index:1;
-
   background:
-  linear-gradient(
-    90deg,
-    rgba(7,21,34,.90) 0%,
-    rgba(7,21,34,.72) 35%,
-    rgba(7,21,34,.38) 62%,
-    rgba(7,21,34,.08) 100%
-  );
+    linear-gradient(
+      90deg,
+      rgba(7,21,34,.92) 0%,
+      rgba(7,21,34,.68) 38%,
+      rgba(7,21,34,.26) 68%,
+      rgba(7,21,34,.08) 100%
+    );
 }
 
-
-.heroInner{
-  position:relative;
-
-  z-index:2;
-
-  padding:90px 0 72px;
+.heroContent{
+  position:absolute;
+  left:50%;
+  bottom:0;
+  transform:translateX(-50%);
+  width:min(1160px,calc(100% - 32px));
+  padding-bottom:58px;
+  color:white;
+  z-index:3;
 }
 
 .eyebrow{
   font-size:11px;
   letter-spacing:.20em;
-
   font-weight:800;
-
   color:var(--gold);
-
   text-transform:uppercase;
 }
 
 .hero h1{
-  font:
-  500 clamp(55px,8vw,92px)/1 Georgia;
-
-  margin:15px 0 20px;
-
+  font:500 clamp(56px,8vw,92px)/1 Georgia;
+  margin:15px 0 18px;
   letter-spacing:-.04em;
 }
 
-.hero p{
+.heroText{
+  max-width:660px;
   font-size:17px;
   line-height:1.8;
-
-  color:#e0e7eb;
-
-  max-width:680px;
+  color:#e1e8ec;
 }
 
 .heroPrice{
-  margin-top:24px;
+  margin-top:22px;
 }
 
 .heroPrice small{
   display:block;
-
+  color:#c8d0d5;
   font-size:10px;
   letter-spacing:.16em;
-
-  color:#c7d0d5;
 }
 
 .heroPrice strong{
   display:block;
-
-  margin-top:6px;
-
-  font:44px Georgia;
-
+  margin-top:5px;
   color:var(--gold);
+  font:44px Georgia;
 }
 
 .pills{
   display:flex;
-  gap:9px;
   flex-wrap:wrap;
-
-  margin-top:24px;
+  gap:9px;
+  margin-top:22px;
 }
 
 .pill{
   padding:9px 12px;
-
   border-radius:999px;
-
   border:1px solid rgba(255,255,255,.25);
-
   background:rgba(255,255,255,.06);
-
   font-size:12px;
 }
 
@@ -292,8 +232,7 @@ HERO
   display:flex;
   gap:12px;
   flex-wrap:wrap;
-
-  margin-top:28px;
+  margin-top:26px;
 }
 
 
@@ -316,27 +255,20 @@ GENERAL
 
 .head{
   display:flex;
-
   align-items:flex-end;
   justify-content:space-between;
-
   gap:30px;
-
   margin-bottom:34px;
 }
 
 .head h2{
-  font:
-  500 clamp(36px,5vw,56px)/1.08 Georgia;
-
+  font:500 clamp(36px,5vw,56px)/1.08 Georgia;
   margin:8px 0;
 }
 
 .head p{
   max-width:520px;
-
   color:var(--muted);
-
   line-height:1.7;
 }
 
@@ -351,38 +283,27 @@ OVERVIEW
 
 .stats{
   display:grid;
-
-  grid-template-columns:
-  repeat(4,1fr);
-
+  grid-template-columns:repeat(4,1fr);
   gap:14px;
 }
 
 .stat{
   background:#fff;
-
   border:1px solid var(--line);
-
   border-radius:20px;
-
   padding:24px;
 }
 
 .stat small{
   font-size:10px;
-
   color:var(--muted);
-
   letter-spacing:.15em;
-
   text-transform:uppercase;
 }
 
 .stat strong{
   display:block;
-
   font:28px Georgia;
-
   margin-top:8px;
 }
 
@@ -393,79 +314,54 @@ LOCATION
 
 .locationGrid{
   display:grid;
-
-  grid-template-columns:
-  1.15fr .85fr;
-
+  grid-template-columns:1.15fr .85fr;
   gap:22px;
-
   align-items:stretch;
 }
 
 .locationMap{
   overflow:hidden;
-
   border-radius:26px;
-
   background:white;
-
   border:1px solid var(--line);
-
-  box-shadow:
-  0 18px 45px rgba(7,21,34,.08);
 }
 
 .locationMap img{
   width:100%;
   height:100%;
-
   min-height:480px;
-
   object-fit:cover;
 }
 
 .locationInfo{
   background:white;
-
   border:1px solid var(--line);
-
   border-radius:26px;
-
   padding:32px;
 }
 
 .locationInfo h3{
   font:34px Georgia;
-
   margin:9px 0 15px;
 }
 
 .locationInfo p{
   color:var(--muted);
-
   line-height:1.8;
 }
 
 .locationList{
   display:grid;
-
   gap:10px;
-
   margin-top:22px;
 }
 
 .locationItem{
   display:flex;
-
   justify-content:space-between;
-
   gap:15px;
-
   padding:14px 0;
-
-  border-bottom:
-  1px solid var(--line);
-
+  border-bottom:1px solid var(--line);
   font-size:13px;
 }
 
@@ -479,11 +375,8 @@ LOCATION
 
 .locationNote{
   margin-top:18px;
-
   color:#98a1a7;
-
   font-size:10px;
-
   line-height:1.6;
 }
 
@@ -494,38 +387,27 @@ HOUSE TYPES
 
 .typeGrid{
   display:grid;
-
-  grid-template-columns:
-  repeat(3,1fr);
-
+  grid-template-columns:repeat(3,1fr);
   gap:16px;
 }
 
 .typeCard{
   border:1px solid var(--line);
-
   background:white;
-
   border-radius:24px;
-
   padding:28px;
 }
 
 .typeCard.featured{
   background:var(--navy);
-
   color:white;
-
   border-color:var(--navy);
 }
 
 .type{
   font-size:11px;
-
   font-weight:800;
-
   letter-spacing:.14em;
-
   color:#9a7736;
 }
 
@@ -535,15 +417,12 @@ HOUSE TYPES
 
 .typeCard h3{
   font:36px Georgia;
-
   margin:10px 0 5px;
 }
 
 .built{
   color:var(--muted);
-
   font-size:13px;
-
   line-height:1.7;
 }
 
@@ -553,9 +432,7 @@ HOUSE TYPES
 
 .amount{
   margin-top:25px;
-
   font:34px Georgia;
-
   color:#9a7736;
 }
 
@@ -565,9 +442,7 @@ HOUSE TYPES
 
 .note{
   margin-top:7px;
-
   font-size:11px;
-
   color:var(--muted);
 }
 
@@ -577,27 +452,19 @@ HOUSE TYPES
 
 
 /* =========================
-HOUSE EXTERIOR
+EXTERIOR
 ========================= */
 
 .houseExterior{
   overflow:hidden;
-
   margin-bottom:28px;
-
   border-radius:28px;
-
   background:white;
-
-  box-shadow:
-  0 18px 45px rgba(7,21,34,.09);
 }
 
 .houseExterior img{
   width:100%;
-
   max-height:620px;
-
   object-fit:cover;
 }
 
@@ -608,50 +475,33 @@ FLOOR PLAN
 
 .plan{
   display:grid;
-
-  grid-template-columns:
-  1.15fr .85fr;
-
+  grid-template-columns:1.15fr .85fr;
   gap:22px;
-
   align-items:center;
 }
 
 .planImg{
   background:white;
-
   border:1px solid var(--line);
-
   border-radius:24px;
-
   padding:12px;
-
-  box-shadow:
-  0 14px 35px rgba(7,21,34,.06);
 }
 
 .planImg img{
   width:100%;
-
   border-radius:16px;
 }
 
 .listCards{
   display:grid;
-
   gap:12px;
 }
 
 .mini{
-  border:
-  1px solid var(--line);
-
+  border:1px solid var(--line);
   border-radius:18px;
-
   background:white;
-
   padding:20px;
-
   color:var(--ink);
 }
 
@@ -661,17 +511,13 @@ FLOOR PLAN
 
 .mini p{
   margin:8px 0 0;
-
   color:var(--muted);
-
   font-size:13px;
-
   line-height:1.65;
 }
 
 .housePrice{
   font:28px Georgia !important;
-
   color:#9a7736 !important;
 }
 
@@ -682,41 +528,30 @@ LIFESTYLE
 
 .lifeGrid{
   display:grid;
-
-  grid-template-columns:
-  repeat(3,1fr);
-
+  grid-template-columns:repeat(3,1fr);
   gap:14px;
 }
 
 .life{
-  border:
-  1px solid var(--line);
-
+  border:1px solid var(--line);
   border-radius:20px;
-
   padding:24px;
-
   background:white;
 }
 
 .life span{
   font:28px Georgia;
-
   color:#9a7736;
 }
 
 .life h3{
   font-size:15px;
-
   margin:12px 0 7px;
 }
 
 .life p{
   color:var(--muted);
-
   font-size:12px;
-
   line-height:1.7;
 }
 
@@ -727,59 +562,43 @@ PRICE
 
 .priceBox{
   display:grid;
-
-  grid-template-columns:
-  1fr 1fr;
-
+  grid-template-columns:1fr 1fr;
   gap:20px;
 }
 
 .priceHero{
   background:var(--navy);
-
   color:white;
-
   border-radius:28px;
-
   padding:36px;
 }
 
 .priceHero .big{
   margin:12px 0;
-
   font:60px Georgia;
-
   color:var(--gold);
 }
 
 .priceHero p{
   color:#aebac2;
-
   line-height:1.8;
 }
 
 .priceDetails{
   background:white;
-
-  border:
-  1px solid var(--line);
-
+  border:1px solid var(--line);
   border-radius:28px;
-
   padding:34px;
 }
 
 .priceDetails h3{
   font:32px Georgia;
-
   margin:10px 0 18px;
 }
 
 .priceDetails ul{
   padding-left:20px;
-
   color:var(--muted);
-
   line-height:2;
 }
 
@@ -790,67 +609,46 @@ PACKAGE
 
 .package{
   display:grid;
-
-  grid-template-columns:
-  .85fr 1.15fr;
-
+  grid-template-columns:.85fr 1.15fr;
   gap:30px;
-
   align-items:center;
 }
 
 .packageBig{
   margin:12px 0 20px;
-
   font:70px Georgia;
-
   color:var(--gold);
-
   line-height:.95;
 }
 
 .packageIntro p{
   color:#a9b5bd;
-
   line-height:1.8;
 }
 
 .packageGrid{
   display:grid;
-
-  grid-template-columns:
-  1fr 1fr;
-
+  grid-template-columns:1fr 1fr;
   gap:12px;
 }
 
 .packageItem{
-  border:
-  1px solid rgba(255,255,255,.10);
-
-  background:
-  rgba(255,255,255,.04);
-
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.04);
   border-radius:18px;
-
   padding:20px;
 }
 
 .packageItem b{
   display:block;
-
   font-size:14px;
 }
 
 .packageItem span{
   display:block;
-
   margin-top:7px;
-
   color:#9eabb4;
-
   font-size:11px;
-
   line-height:1.6;
 }
 
@@ -861,27 +659,20 @@ CTA
 
 .cta{
   text-align:center;
-
   padding:90px 20px;
-
   background:var(--cream);
 }
 
 .cta h2{
   max-width:760px;
-
   margin:9px auto 18px;
-
   font:48px Georgia;
 }
 
 .cta p{
   max-width:720px;
-
   margin:0 auto 25px;
-
   color:var(--muted);
-
   line-height:1.7;
 }
 
@@ -892,44 +683,29 @@ FOOTER
 
 .foot{
   background:#040e16;
-
   color:#87949d;
-
   padding:30px 0;
-
   font-size:11px;
 }
 
 .footin{
   display:flex;
-
   justify-content:space-between;
-
   gap:20px;
 }
 
 .float{
   position:fixed;
-
   right:18px;
   bottom:18px;
-
   width:58px;
   height:58px;
-
   border-radius:50%;
-
   background:var(--gold);
-
   display:grid;
-
   place-items:center;
-
   font-weight:900;
-
-  box-shadow:
-  0 12px 30px rgba(0,0,0,.28);
-
+  box-shadow:0 12px 30px rgba(0,0,0,.28);
   z-index:100;
 }
 
@@ -940,9 +716,12 @@ TABLET
 
 @media(max-width:900px){
 
+  .heroImage{
+    height:650px;
+  }
+
   .stats{
-    grid-template-columns:
-    1fr 1fr;
+    grid-template-columns:1fr 1fr;
   }
 
   .locationGrid,
@@ -957,8 +736,7 @@ TABLET
   }
 
   .lifeGrid{
-    grid-template-columns:
-    1fr 1fr;
+    grid-template-columns:1fr 1fr;
   }
 
   .locationMap img{
@@ -975,8 +753,7 @@ MOBILE
 @media(max-width:560px){
 
   .wrap{
-    width:
-    min(100% - 24px,1160px);
+    width:min(100% - 24px,1160px);
   }
 
   .back{
@@ -989,50 +766,48 @@ MOBILE
 
   .nav .btn{
     padding:10px 13px;
-
     font-size:11px;
   }
 
-
-  /* HERO MOBILE */
-
   .hero{
-    min-height:650px;
+    margin-top:64px;
   }
 
-  .heroBg{
+  .heroImage{
+    height:670px;
+  }
+
+  .heroImage img{
     object-position:58% center;
   }
 
-  .heroOverlay{
+  .heroShade{
     background:
-    linear-gradient(
-      0deg,
-      rgba(7,21,34,.92) 0%,
-      rgba(7,21,34,.58) 48%,
-      rgba(7,21,34,.12) 100%
-    );
+      linear-gradient(
+        0deg,
+        rgba(7,21,34,.94) 0%,
+        rgba(7,21,34,.65) 45%,
+        rgba(7,21,34,.16) 100%
+      );
   }
 
-  .heroInner{
-    padding:
-    100px 0 52px;
+  .heroContent{
+    width:calc(100% - 24px);
+    padding-bottom:40px;
   }
 
   .hero h1{
     font-size:50px;
   }
 
-  .hero p{
+  .heroText{
     font-size:14px;
-
     max-width:95%;
   }
 
   .heroPrice strong{
     font-size:35px;
   }
-
 
   .section{
     padding:68px 0;
@@ -1043,8 +818,7 @@ MOBILE
   }
 
   .stats{
-    grid-template-columns:
-    1fr 1fr;
+    grid-template-columns:1fr 1fr;
   }
 
   .packageGrid,
@@ -1086,18 +860,13 @@ MOBILE
 <body>
 
 
-
-<!-- =====================================
-NAV
-===================================== -->
+<!-- NAV -->
 
 <header class="nav">
 
 <div class="wrap navin">
 
-<a
-class="brand"
-href="index.html">
+<a class="brand" href="index.html">
 
 <strong>JC</strong>
 
@@ -1108,15 +877,9 @@ JOHOR PROJECT FINDER
 
 </a>
 
-
-<a
-class="back"
-href="index.html">
-
+<a class="back" href="index.html">
 ← 返回全部项目
-
 </a>
-
 
 <a
 class="btn"
@@ -1132,50 +895,37 @@ WhatsApp JC
 </header>
 
 
-
 <!-- =====================================
 HERO
-IMPORTANT:
-Hero uses its own mtiara-hero.jpg
 ===================================== -->
 
 <section class="hero">
 
+<div class="heroImage">
 
 <img
-class="heroBg"
 src="mtiara-hero.jpg"
-alt="M Tiara 20x70 Exterior Hero">
+alt="M Tiara Hero">
 
+<div class="heroShade"></div>
 
-<div class="heroOverlay"></div>
-
-
-<div class="wrap heroInner">
-
+<div class="heroContent">
 
 <div class="eyebrow">
-
 MUTIARA RINI · SKUDAI
-
 </div>
 
-
 <h1>
-
 M Tiara
-
 </h1>
 
-
-<p>
+<div class="heroText">
 
 Freehold Gated & Guarded Landed Development。
 从 20×70 Terrace、22×65 / 70 Terrace
 到 32×70 Cluster，为不同家庭空间与预算提供选择。
 
-</p>
-
+</div>
 
 <div class="heroPrice">
 
@@ -1188,7 +938,6 @@ RM879K+
 </strong>
 
 </div>
-
 
 <div class="pills">
 
@@ -1218,7 +967,6 @@ Gated & Guarded
 
 </div>
 
-
 <div class="actions">
 
 <a
@@ -1230,7 +978,6 @@ target="_blank">
 
 </a>
 
-
 <a
 class="ghost"
 href="#overview">
@@ -1241,109 +988,63 @@ href="#overview">
 
 </div>
 
+</div>
 
 </div>
 
 </section>
 
 
+<!-- OVERVIEW -->
 
-<!-- =====================================
-OVERVIEW
-===================================== -->
-
-<section
-id="overview"
-class="section cream">
+<section id="overview" class="section cream">
 
 <div class="wrap">
-
 
 <div class="head">
 
 <div>
 
 <div class="eyebrow">
-
 M TIARA OVERVIEW
-
 </div>
 
 <h2>
-
 先看最重要的资料。
-
 </h2>
 
 </div>
 
-
 <p>
-
 M Tiara 位于 Mutiara Rini，
 以 Freehold Landed、Gated & Guarded 社区
 及多种有地住宅户型为主要定位。
-
 </p>
 
 </div>
 
 
-
 <div class="stats">
 
-
 <div class="stat">
-
-<small>
-TENURE
-</small>
-
-<strong>
-Freehold
-</strong>
-
+<small>TENURE</small>
+<strong>Freehold</strong>
 </div>
 
-
 <div class="stat">
-
-<small>
-COMMUNITY
-</small>
-
-<strong>
-G&G
-</strong>
-
+<small>COMMUNITY</small>
+<strong>G&G</strong>
 </div>
 
-
 <div class="stat">
-
-<small>
-BEDROOMS
-</small>
-
-<strong>
-4 Rooms
-</strong>
-
+<small>BEDROOMS</small>
+<strong>4 Rooms</strong>
 </div>
 
-
 <div class="stat">
-
-<small>
-FROM
-</small>
-
-<strong>
-RM879K+
-</strong>
-
+<small>FROM</small>
+<strong>RM879K+</strong>
 </div>
-
 
 </div>
 
@@ -1352,165 +1053,93 @@ RM879K+
 </section>
 
 
-
-<!-- =====================================
-LOCATION
-===================================== -->
+<!-- LOCATION -->
 
 <section class="section">
 
 <div class="wrap">
 
-
 <div class="head">
 
 <div>
 
 <div class="eyebrow">
-
 LOCATION · MUTIARA RINI
-
 </div>
 
-
 <h2>
-
-成熟生活圈，
-连接 Second Link。
-
+成熟生活圈，连接 Second Link。
 </h2>
 
 </div>
 
-
 <p>
-
 位于 Mutiara Rini，
 日常购物、商场及主要道路都在方便距离。
-
 </p>
 
 </div>
 
 
-
 <div class="locationGrid">
-
 
 <div class="locationMap">
 
 <img
 src="mtiara-location-map.jpg"
-alt="M Tiara Mutiara Rini Location Map">
+alt="M Tiara Location Map">
 
 </div>
-
 
 
 <div class="locationInfo">
 
-
 <div class="eyebrow">
-
 CONNECTIVITY
-
 </div>
 
-
 <h3>
-
 M Tiara @ Mutiara Rini
-
 </h3>
 
-
 <p>
-
 周边已有成熟商业与生活配套，
 同时可连接主要高速公路及 Second Link。
-
 </p>
-
 
 
 <div class="locationList">
 
+<div class="locationItem">
+<span>Lotus's Mutiara Rini</span>
+<b>约 3 min</b>
+</div>
 
 <div class="locationItem">
-
-<span>
-Lotus's Mutiara Rini
-</span>
-
-<b>
-约 3 min
-</b>
-
+<span>Sutera Mall</span>
+<b>约 15 min</b>
 </div>
-
 
 <div class="locationItem">
-
-<span>
-Sutera Mall
-</span>
-
-<b>
-约 15 min
-</b>
-
+<span>Paradigm Mall</span>
+<b>约 15 min</b>
 </div>
-
 
 <div class="locationItem">
-
-<span>
-Paradigm Mall
-</span>
-
-<b>
-约 15 min
-</b>
-
+<span>AEON Bukit Indah</span>
+<b>约 18 min</b>
 </div>
-
 
 <div class="locationItem">
-
-<span>
-AEON Bukit Indah
-</span>
-
-<b>
-约 18 min
-</b>
-
+<span>2nd Link CIQ</span>
+<b>约 25 min</b>
 </div>
 
-
-<div class="locationItem">
-
-<span>
-2nd Link CIQ
-</span>
-
-<b>
-约 25 min
-</b>
-
 </div>
-
-
-</div>
-
 
 <div class="locationNote">
-
-Travel time is approximate and may vary
-depending on traffic conditions.
-
+Travel time is approximate and may vary depending on traffic conditions.
 </div>
-
 
 </div>
 
@@ -1521,165 +1150,112 @@ depending on traffic conditions.
 </section>
 
 
-
-<!-- =====================================
-HOUSE TYPE OVERVIEW
-===================================== -->
+<!-- HOUSE TYPE OVERVIEW -->
 
 <section class="section cream">
 
 <div class="wrap">
 
-
 <div class="head">
 
 <div>
 
 <div class="eyebrow">
-
 CHOOSE YOUR HOME
-
 </div>
 
-
 <h2>
-
 3 个主要房款。
-
 </h2>
 
 </div>
 
-
 <p>
-
 从 Land Size、Built-up、房间数量和预算直接比较，
 再查看每个房款的 Exterior 与 Floor Plan。
-
 </p>
 
 </div>
 
 
-
 <div class="typeGrid">
-
-
-<!-- 20x70 -->
 
 <div class="typeCard featured">
 
 <div class="type">
-
 PHASE 2A · TERRACE
-
 </div>
 
 <h3>
-
 20×70
-
 </h3>
 
 <div class="built">
-
 1,798 sqft<br>
 4 Bedrooms · 3 Bathrooms
-
 </div>
 
 <div class="amount">
-
 RM879K+
-
 </div>
 
 <div class="note">
-
 Nett Starting Price
-
 </div>
 
 </div>
 
-
-
-<!-- 22 -->
 
 <div class="typeCard">
 
 <div class="type">
-
 PHASE 2B · TERRACE
-
 </div>
 
 <h3>
-
 22×65 / 70
-
 </h3>
 
 <div class="built">
-
 2,004 sqft<br>
 4 Bedrooms · 3 Bathrooms
-
 </div>
 
 <div class="amount">
-
 RM930K+
-
 </div>
 
 <div class="note">
-
 Nett Starting Price
-
 </div>
 
 </div>
 
-
-
-<!-- 32 -->
 
 <div class="typeCard">
 
 <div class="type">
-
 CLUSTER HOME
-
 </div>
 
 <h3>
-
 32×70
-
 </h3>
 
 <div class="built">
-
 2,157 sqft<br>
 4 Bedrooms · 4 Bathrooms
-
 </div>
 
 <div class="amount">
-
 RM1.09M
-
 </div>
 
 <div class="note">
-
 Nett Price
-
 </div>
 
 </div>
-
 
 </div>
 
@@ -1688,48 +1264,33 @@ Nett Price
 </section>
 
 
-
-<!-- =====================================
-20×70
-===================================== -->
+<!-- 20×70 -->
 
 <section class="section">
 
 <div class="wrap">
-
 
 <div class="head">
 
 <div>
 
 <div class="eyebrow">
-
 PHASE 2A · DOUBLE STOREY TERRACE
-
 </div>
 
 <h2>
-
 20×70
-
 </h2>
 
 </div>
 
-
 <p>
-
 1,798 sqft · 4 Bedrooms · 3 Bathrooms<br>
 Nett Starting Price RM879K+
-
 </p>
 
 </div>
 
-
-
-<!-- 20×70 EXTERIOR
-This is NOT the Hero file -->
 
 <div class="houseExterior">
 
@@ -1740,11 +1301,7 @@ alt="M Tiara 20x70 Exterior">
 </div>
 
 
-
-<!-- 20×70 FLOOR PLAN -->
-
 <div class="plan">
-
 
 <div class="planImg">
 
@@ -1755,61 +1312,27 @@ alt="M Tiara 20x70 Floor Plan">
 </div>
 
 
-
 <div class="listCards">
 
-
 <div class="mini">
-
-<b>
-Land Size
-</b>
-
-<p>
-20×70 Double Storey Terrace
-</p>
-
+<b>Land Size</b>
+<p>20×70 Double Storey Terrace</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Built-up
-</b>
-
-<p>
-1,798 sqft
-</p>
-
+<b>Built-up</b>
+<p>1,798 sqft</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Layout
-</b>
-
-<p>
-4 Bedrooms · 3 Bathrooms
-</p>
-
+<b>Layout</b>
+<p>4 Bedrooms · 3 Bathrooms</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Nett Price
-</b>
-
-<p class="housePrice">
-RM879K+
-</p>
-
+<b>Nett Price</b>
+<p class="housePrice">RM879K+</p>
 </div>
-
 
 <a
 class="btn"
@@ -1820,7 +1343,6 @@ target="_blank">
 
 </a>
 
-
 </div>
 
 </div>
@@ -1830,47 +1352,33 @@ target="_blank">
 </section>
 
 
-
-<!-- =====================================
-22×65 / 70
-===================================== -->
+<!-- 22×65 / 70 -->
 
 <section class="section cream">
 
 <div class="wrap">
-
 
 <div class="head">
 
 <div>
 
 <div class="eyebrow">
-
 PHASE 2B · DOUBLE STOREY TERRACE
-
 </div>
 
 <h2>
-
 22×65 / 70
-
 </h2>
 
 </div>
 
-
 <p>
-
 2,004 sqft · 4 Bedrooms · 3 Bathrooms<br>
 Nett Starting Price RM930K+
-
 </p>
 
 </div>
 
-
-
-<!-- 22 EXTERIOR -->
 
 <div class="houseExterior">
 
@@ -1881,11 +1389,7 @@ alt="M Tiara 22x70 Exterior">
 </div>
 
 
-
-<!-- 22 FLOOR PLAN -->
-
 <div class="plan">
-
 
 <div class="planImg">
 
@@ -1896,61 +1400,27 @@ alt="M Tiara 22x70 Floor Plan">
 </div>
 
 
-
 <div class="listCards">
 
-
 <div class="mini">
-
-<b>
-Land Size
-</b>
-
-<p>
-22×65 / 22×70 Double Storey Terrace
-</p>
-
+<b>Land Size</b>
+<p>22×65 / 22×70 Double Storey Terrace</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Built-up
-</b>
-
-<p>
-2,004 sqft
-</p>
-
+<b>Built-up</b>
+<p>2,004 sqft</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Layout
-</b>
-
-<p>
-4 Bedrooms · 3 Bathrooms
-</p>
-
+<b>Layout</b>
+<p>4 Bedrooms · 3 Bathrooms</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Nett Price
-</b>
-
-<p class="housePrice">
-RM930K+
-</p>
-
+<b>Nett Price</b>
+<p class="housePrice">RM930K+</p>
 </div>
-
 
 <a
 class="btn"
@@ -1961,7 +1431,6 @@ target="_blank">
 
 </a>
 
-
 </div>
 
 </div>
@@ -1971,127 +1440,75 @@ target="_blank">
 </section>
 
 
-
-<!-- =====================================
-32×70 CLUSTER
-===================================== -->
+<!-- 32×70 -->
 
 <section class="section dark">
 
 <div class="wrap">
-
 
 <div class="head">
 
 <div>
 
 <div class="eyebrow">
-
 DOUBLE STOREY CLUSTER
-
 </div>
 
 <h2>
-
 32×70 Cluster
-
 </h2>
 
 </div>
 
-
 <p>
-
 2,157 sqft · 4 Bedrooms · 4 Bathrooms<br>
 Nett Price RM1.09M
-
 </p>
 
 </div>
 
-
-
-<!-- 32 EXTERIOR -->
 
 <div class="houseExterior">
 
 <img
 src="mtiara-exterior-32x70.jpg"
-alt="M Tiara 32x70 Cluster Exterior">
+alt="M Tiara 32x70 Exterior">
 
 </div>
 
 
-
-<!-- 32 FLOOR PLAN -->
-
 <div class="plan">
-
 
 <div class="planImg">
 
 <img
 src="mtiara-floor-plan-32x70.jpg"
-alt="M Tiara 32x70 Cluster Floor Plan">
+alt="M Tiara 32x70 Floor Plan">
 
 </div>
-
 
 
 <div class="listCards">
 
-
 <div class="mini">
-
-<b>
-Land Size
-</b>
-
-<p>
-32×70 Double Storey Cluster
-</p>
-
+<b>Land Size</b>
+<p>32×70 Double Storey Cluster</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Built-up
-</b>
-
-<p>
-2,157 sqft
-</p>
-
+<b>Built-up</b>
+<p>2,157 sqft</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Layout
-</b>
-
-<p>
-4 Bedrooms · 4 Bathrooms
-</p>
-
+<b>Layout</b>
+<p>4 Bedrooms · 4 Bathrooms</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Nett Price
-</b>
-
-<p class="housePrice">
-RM1.09M
-</p>
-
+<b>Nett Price</b>
+<p class="housePrice">RM1.09M</p>
 </div>
-
 
 <a
 class="btn"
@@ -2102,7 +1519,6 @@ target="_blank">
 
 </a>
 
-
 </div>
 
 </div>
@@ -2112,138 +1528,71 @@ target="_blank">
 </section>
 
 
-
-<!-- =====================================
-LIFESTYLE
-===================================== -->
+<!-- LIFESTYLE -->
 
 <section class="section cream">
 
 <div class="wrap">
 
-
 <div class="head">
 
 <div>
 
 <div class="eyebrow">
-
 LIFESTYLE
-
 </div>
 
 <h2>
-
 为家庭生活规划的社区。
-
 </h2>
 
 </div>
 
-
 <p>
-
 M Tiara 结合有地住宅、社区绿化及休闲空间，
 适合家庭自住及长期居住规划。
-
 </p>
 
 </div>
-
 
 
 <div class="lifeGrid">
 
-
 <div class="life">
-
 <span>01</span>
-
-<h3>
-Gated & Guarded
-</h3>
-
-<p>
-以住宅社区安全与私密性为核心。
-</p>
-
+<h3>Gated & Guarded</h3>
+<p>以住宅社区安全与私密性为核心。</p>
 </div>
 
-
 <div class="life">
-
 <span>02</span>
-
-<h3>
-Open Lawn
-</h3>
-
-<p>
-户外休闲与家庭活动空间。
-</p>
-
+<h3>Open Lawn</h3>
+<p>户外休闲与家庭活动空间。</p>
 </div>
 
-
 <div class="life">
-
 <span>03</span>
-
-<h3>
-Bicycle Trail
-</h3>
-
-<p>
-社区规划结合 Bicycle Trail。
-</p>
-
+<h3>Bicycle Trail</h3>
+<p>社区规划结合 Bicycle Trail。</p>
 </div>
 
-
 <div class="life">
-
 <span>04</span>
-
-<h3>
-Pedestrian Friendly
-</h3>
-
-<p>
-强调 Walkable Streets 与步行环境。
-</p>
-
+<h3>Pedestrian Friendly</h3>
+<p>强调 Walkable Streets 与步行环境。</p>
 </div>
 
-
 <div class="life">
-
 <span>05</span>
-
-<h3>
-Outdoor Lifestyle
-</h3>
-
-<p>
-结合休闲与户外活动区域。
-</p>
-
+<h3>Outdoor Lifestyle</h3>
+<p>结合休闲与户外活动区域。</p>
 </div>
-
 
 <div class="life">
-
 <span>06</span>
-
-<h3>
-Family Community
-</h3>
-
-<p>
-适合家庭自住及长期居住规划。
-</p>
-
+<h3>Family Community</h3>
+<p>适合家庭自住及长期居住规划。</p>
 </div>
-
 
 </div>
 
@@ -2252,74 +1601,51 @@ Family Community
 </section>
 
 
-
-<!-- =====================================
-PRICE
-===================================== -->
+<!-- PRICE -->
 
 <section class="section">
 
 <div class="wrap">
-
 
 <div class="head">
 
 <div>
 
 <div class="eyebrow">
-
 PRICE
-
 </div>
 
 <h2>
-
 M Tiara Nett Price
-
 </h2>
 
 </div>
 
-
 <p>
-
 不同房款直接分开显示。
 实际可售单位、位置及最新价格
 再根据当前库存确认。
-
 </p>
 
 </div>
-
 
 
 <div class="priceBox">
 
-
 <div class="priceHero">
 
-
 <div class="eyebrow">
-
 PRICE FROM
-
 </div>
-
 
 <div class="big">
-
 RM879K+
-
 </div>
 
-
 <p>
-
 20×70 · 1,798 sqft · 4房3厕<br>
 Freehold · Gated & Guarded
-
 </p>
-
 
 <a
 class="btn"
@@ -2330,27 +1656,18 @@ target="_blank">
 
 </a>
 
-
 </div>
-
 
 
 <div class="priceDetails">
 
-
 <div class="eyebrow">
-
 CURRENT RANGE
-
 </div>
 
-
 <h3>
-
 按房款选择。
-
 </h3>
-
 
 <ul>
 
@@ -2379,7 +1696,6 @@ RM1.09M Nett
 
 </ul>
 
-
 </div>
 
 </div>
@@ -2389,74 +1705,51 @@ RM1.09M Nett
 </section>
 
 
-
-<!-- =====================================
-PACKAGE
-===================================== -->
+<!-- PACKAGE -->
 
 <section class="section dark">
 
 <div class="wrap">
-
 
 <div class="head">
 
 <div>
 
 <div class="eyebrow">
-
 SALES PACKAGE
-
 </div>
 
 <h2>
-
 M Tiara Package
-
 </h2>
 
 </div>
 
-
 <p>
-
 不同优惠可能有签约期限或资格条件，
 最终 Package 以发展商最新确认资料为准。
-
 </p>
 
 </div>
-
 
 
 <div class="package">
 
-
 <div class="packageIntro">
 
-
 <div class="eyebrow">
-
 DEVELOPER PACKAGE
-
 </div>
-
 
 <div class="packageBig">
-
 Up to<br>
 9%
-
 </div>
 
-
 <p>
-
 最高优惠根据适用的 Developer Incentive
 与签约条件确认。
-
 </p>
-
 
 <a
 class="btn"
@@ -2467,91 +1760,40 @@ target="_blank">
 
 </a>
 
-
 </div>
-
 
 
 <div class="packageGrid">
 
-
 <div class="packageItem">
-
-<b>
-Up to 9% Rebate
-</b>
-
-<span>
-Subject to applicable developer terms and eligibility.
-</span>
-
+<b>Up to 9% Rebate</b>
+<span>Subject to applicable developer terms and eligibility.</span>
 </div>
 
-
 <div class="packageItem">
-
-<b>
-SPA Legal Fee
-</b>
-
-<span>
-Subject to the applicable developer package.
-</span>
-
+<b>SPA Legal Fee</b>
+<span>Subject to the applicable developer package.</span>
 </div>
 
-
 <div class="packageItem">
-
-<b>
-Loan Legal Fee
-</b>
-
-<span>
-Subject to the applicable developer package.
-</span>
-
+<b>Loan Legal Fee</b>
+<span>Subject to the applicable developer package.</span>
 </div>
 
-
 <div class="packageItem">
-
-<b>
-Loan Stamp Duty
-</b>
-
-<span>
-Subject to the applicable developer package.
-</span>
-
+<b>Loan Stamp Duty</b>
+<span>Subject to the applicable developer package.</span>
 </div>
 
-
 <div class="packageItem">
-
-<b>
-MOT
-</b>
-
-<span>
-Subject to the latest developer package terms.
-</span>
-
+<b>MOT</b>
+<span>Subject to the latest developer package terms.</span>
 </div>
 
-
 <div class="packageItem">
-
-<b>
-Latest Incentive
-</b>
-
-<span>
-Contact JC to confirm current unit-specific incentives.
-</span>
-
+<b>Latest Incentive</b>
+<span>Contact JC to confirm current unit-specific incentives.</span>
 </div>
-
 
 </div>
 
@@ -2562,37 +1804,24 @@ Contact JC to confirm current unit-specific incentives.
 </section>
 
 
-
-<!-- =====================================
-CTA
-===================================== -->
+<!-- CTA -->
 
 <section class="cta">
 
-
 <div class="eyebrow">
-
 CONTACT JC
-
 </div>
 
-
 <h2>
-
 不确定 20×70、22×70
 还是 32×70 比较适合？
-
 </h2>
 
-
 <p>
-
 告诉我预算、家庭人数和想要的空间，
 我可以直接帮你比较 M Tiara
 目前适合的房款与可选单位。
-
 </p>
-
 
 <a
 class="btn"
@@ -2603,44 +1832,29 @@ WhatsApp JC
 
 </a>
 
-
 </section>
 
 
-
-<!-- =====================================
-FOOTER
-===================================== -->
+<!-- FOOTER -->
 
 <footer class="foot">
 
 <div class="wrap footin">
 
 <div>
-
-JC PROPERTY ·
-M TIARA @ MUTIARA RINI
-
+JC PROPERTY · M TIARA @ MUTIARA RINI
 </div>
 
-
 <div>
-
 价格、优惠、配套及单位供应
 以发展商最新确认资料为准。
 © 2026 JC Property.
-
 </div>
 
 </div>
 
 </footer>
 
-
-
-<!-- =====================================
-FLOATING WHATSAPP
-===================================== -->
 
 <a
 class="float"
