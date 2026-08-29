@@ -4,14 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>M Tiara @ Skudai | JC Property</title>
+<title>M Tiara @ Mutiara Rini | JC Property</title>
 
-<meta name="description" content="M Tiara @ Skudai by Mah Sing. Freehold Gated & Guarded landed development. 20x70, 22x65/70 and 32x70 Cluster. From RM879K.">
+<meta name="description" content="M Tiara @ Mutiara Rini by Mah Sing. Freehold Gated & Guarded landed development. 20x70, 22x65/70 Terrace and 32x70 Cluster. From RM879K+.">
 
 <style>
 
 :root{
 --navy:#071522;
+--navy2:#0d2130;
 --cream:#f4efe5;
 --gold:#caa45e;
 --white:#fff;
@@ -20,9 +21,13 @@
 --line:#ddd6c9;
 }
 
-*{box-sizing:border-box}
+*{
+box-sizing:border-box;
+}
 
-html{scroll-behavior:smooth}
+html{
+scroll-behavior:smooth;
+}
 
 body{
 margin:0;
@@ -31,7 +36,10 @@ background:#fff;
 color:var(--ink);
 }
 
-a{text-decoration:none;color:inherit}
+a{
+text-decoration:none;
+color:inherit;
+}
 
 img{
 display:block;
@@ -95,6 +103,20 @@ background:var(--gold);
 color:#0b1520;
 font-weight:800;
 font-size:13px;
+transition:.2s ease;
+}
+
+.btn:hover{
+transform:translateY(-1px);
+}
+
+.ghost{
+display:inline-flex;
+padding:13px 18px;
+border:1px solid #ffffff45;
+border-radius:999px;
+font-size:13px;
+color:white;
 }
 
 
@@ -103,9 +125,16 @@ font-size:13px;
 .hero{
 min-height:730px;
 padding-top:70px;
+
 background:
-linear-gradient(90deg,#071522f5 0%,#071522dc 50%,#07152280),
-linear-gradient(135deg,#18354a,#617581);
+linear-gradient(
+90deg,
+rgba(7,21,34,.94) 0%,
+rgba(7,21,34,.78) 42%,
+rgba(7,21,34,.30) 100%
+),
+url("mtiara-exterior-20x70.jpg") center 55% / cover no-repeat;
+
 display:flex;
 align-items:flex-end;
 color:white;
@@ -156,14 +185,6 @@ display:flex;
 gap:12px;
 flex-wrap:wrap;
 margin-top:28px;
-}
-
-.ghost{
-display:inline-flex;
-padding:13px 18px;
-border:1px solid #ffffff45;
-border-radius:999px;
-font-size:13px;
 }
 
 
@@ -235,60 +256,72 @@ margin-top:8px;
 }
 
 
-/* DEVELOPMENT */
+/* LOCATION */
 
-.feature{
+.locationGrid{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
+grid-template-columns:1.15fr .85fr;
+gap:22px;
+align-items:stretch;
 }
 
-.visual{
+.locationMap{
 border-radius:26px;
-min-height:440px;
-background:linear-gradient(135deg,#122b3c,#7b8d96);
-display:grid;
-place-items:center;
-padding:40px;
-color:white;
-text-align:center;
+overflow:hidden;
+background:#fff;
+border:1px solid var(--line);
+box-shadow:0 18px 45px #0715220d;
 }
 
-.visual strong{
-font:48px Georgia;
-color:var(--gold);
+.locationMap img{
+width:100%;
+height:100%;
+min-height:480px;
+object-fit:cover;
 }
 
-.visual span{
-display:block;
-color:#d0d9de;
-margin-top:10px;
-}
-
-.panel{
+.locationInfo{
+background:#fff;
 border:1px solid var(--line);
 border-radius:26px;
 padding:32px;
-background:#fff;
 }
 
-.panel h3{
-font:31px Georgia;
-margin:8px 0 15px;
+.locationInfo h3{
+font:34px Georgia;
+margin:9px 0 15px;
 }
 
-.panel p,
-.panel li{
+.locationInfo p{
 color:var(--muted);
 line-height:1.8;
 }
 
-.panel ul{
-padding-left:19px;
+.locationList{
+display:grid;
+gap:10px;
+margin-top:22px;
+}
+
+.locationItem{
+display:flex;
+justify-content:space-between;
+gap:15px;
+padding:14px 0;
+border-bottom:1px solid var(--line);
+font-size:13px;
+}
+
+.locationItem span{
+color:var(--muted);
+}
+
+.locationItem b{
+color:#9a7736;
 }
 
 
-/* HOUSE TYPE CARDS */
+/* HOUSE TYPE OVERVIEW */
 
 .typeGrid{
 display:grid;
@@ -356,21 +389,25 @@ color:#9eabb4;
 }
 
 
-/* INDIVIDUAL HOUSE */
+/* HOUSE EXTERIOR */
 
 .houseExterior{
 border-radius:28px;
 overflow:hidden;
-margin-bottom:30px;
-box-shadow:0 18px 45px #07152212;
+margin-bottom:28px;
 background:#fff;
+box-shadow:0 18px 45px #07152214;
 }
 
 .houseExterior img{
 width:100%;
+height:auto;
 max-height:580px;
 object-fit:cover;
 }
+
+
+/* FLOOR PLAN */
 
 .plan{
 display:grid;
@@ -565,6 +602,8 @@ max-width:760px;
 .cta p{
 color:var(--muted);
 line-height:1.7;
+max-width:720px;
+margin:0 auto 25px;
 }
 
 
@@ -607,7 +646,7 @@ z-index:60;
 grid-template-columns:1fr 1fr;
 }
 
-.feature,
+.locationGrid,
 .plan,
 .package,
 .priceBox{
@@ -620,6 +659,10 @@ grid-template-columns:1fr;
 
 .lifeGrid{
 grid-template-columns:1fr 1fr;
+}
+
+.locationMap img{
+min-height:350px;
 }
 
 }
@@ -637,8 +680,18 @@ width:min(100% - 24px,1160px);
 display:none;
 }
 
+.navin{
+height:64px;
+}
+
+.nav .btn{
+padding:10px 13px;
+font-size:11px;
+}
+
 .hero{
 min-height:650px;
+background-position:58% center;
 }
 
 .hero h1{
@@ -653,6 +706,10 @@ padding:68px 0;
 display:block;
 }
 
+.stats{
+grid-template-columns:1fr 1fr;
+}
+
 .packageGrid,
 .lifeGrid{
 grid-template-columns:1fr;
@@ -660,6 +717,18 @@ grid-template-columns:1fr;
 
 .packageBig{
 font-size:55px;
+}
+
+.houseExterior{
+border-radius:20px;
+}
+
+.locationMap{
+border-radius:20px;
+}
+
+.locationMap img{
+min-height:280px;
 }
 
 .footin{
@@ -674,6 +743,7 @@ margin-top:8px;
 
 </style>
 </head>
+
 
 <body>
 
@@ -713,7 +783,7 @@ WhatsApp JC
 <div class="wrap heroInner">
 
 <div class="eyebrow">
-SKUDAI · MAH SING
+MUTIARA RINI · MAH SING
 </div>
 
 <h1>
@@ -723,7 +793,7 @@ M Tiara
 <p>
 Freehold Gated & Guarded Landed Development。
 从 20×70 Terrace、22×65 / 70 Terrace
-到 32×70 Cluster，为不同家庭空间需求提供选择。
+到 32×70 Cluster，为不同家庭空间与预算提供选择。
 </p>
 
 <div class="pills">
@@ -766,6 +836,7 @@ target="_blank">
 <div class="head">
 
 <div>
+
 <div class="eyebrow">
 M TIARA OVERVIEW
 </div>
@@ -773,11 +844,13 @@ M TIARA OVERVIEW
 <h2>
 先看最重要的资料。
 </h2>
+
 </div>
 
 <p>
-M Tiara 位于 Skudai，以 Freehold Landed、
-Gated & Guarded 社区及多种有地住宅户型为主要定位。
+M Tiara 位于 Mutiara Rini，
+以 Freehold Landed、Gated & Guarded 社区
+及多种有地住宅户型为主要定位。
 </p>
 
 </div>
@@ -813,52 +886,93 @@ Gated & Guarded 社区及多种有地住宅户型为主要定位。
 
 
 
-<!-- DEVELOPMENT -->
+<!-- LOCATION -->
 
 <section class="section">
 
 <div class="wrap">
 
-<div class="feature">
-
-<div class="visual">
+<div class="head">
 
 <div>
-<strong>M Tiara</strong>
-<span>Skudai · Johor</span>
-</div>
-
-</div>
-
-
-<div class="panel">
 
 <div class="eyebrow">
-DEVELOPMENT BRIEF
+LOCATION
 </div>
 
-<h3>
-M Tiara @ Skudai
-</h3>
+<h2>
+M Tiara @ Mutiara Rini
+</h2>
 
-<ul>
-
-<li>Developer: Mah Sing</li>
-<li>Freehold</li>
-<li>Gated & Guarded</li>
-<li>Landed Residential Development</li>
-<li>20×70 Double Storey Terrace</li>
-<li>22×65 / 22×70 Double Storey Terrace</li>
-<li>32×70 Double Storey Cluster</li>
-
-</ul>
+</div>
 
 <p>
-户型从 Terrace 延伸至更大面积的 Cluster，
-适合首购、家庭升级及需要更多室内空间的买家。
+位于成熟的 Mutiara Rini 区域，
+日常购物、商场及 Second Link 通勤路线都容易连接。
 </p>
 
 </div>
+
+
+<div class="locationGrid">
+
+
+<div class="locationMap">
+
+<img
+src="mtiara-location-map.jpg"
+alt="M Tiara Mutiara Rini Location Map">
+
+</div>
+
+
+<div class="locationInfo">
+
+<div class="eyebrow">
+CONNECTIVITY
+</div>
+
+<h3>
+生活配套就在附近。
+</h3>
+
+<p>
+M Tiara 周边已有成熟商业及生活配套，
+同时可以连接主要高速公路及 Second Link。
+</p>
+
+
+<div class="locationList">
+
+<div class="locationItem">
+<span>Lotus's</span>
+<b>约 3 min</b>
+</div>
+
+<div class="locationItem">
+<span>Sutera Mall</span>
+<b>约 15 min</b>
+</div>
+
+<div class="locationItem">
+<span>Paradigm Mall</span>
+<b>约 15 min</b>
+</div>
+
+<div class="locationItem">
+<span>AEON Bukit Indah</span>
+<b>约 18 min</b>
+</div>
+
+<div class="locationItem">
+<span>E22 / 2nd Link CIQ</span>
+<b>约 25 min</b>
+</div>
+
+</div>
+
+</div>
+
 
 </div>
 
@@ -868,7 +982,7 @@ M Tiara @ Skudai
 
 
 
-<!-- HOUSE TYPE OVERVIEW -->
+<!-- HOUSE TYPES -->
 
 <section class="section cream">
 
@@ -877,6 +991,7 @@ M Tiara @ Skudai
 <div class="head">
 
 <div>
+
 <div class="eyebrow">
 CHOOSE YOUR HOME
 </div>
@@ -884,11 +999,12 @@ CHOOSE YOUR HOME
 <h2>
 3 个主要房款。
 </h2>
+
 </div>
 
 <p>
-先看整体比较，再往下进入每一个房款，
-Exterior、Floor Plan、Built-up 和价格都会分开显示。
+从 Land Size、Built-up、房间数量及预算直接比较，
+再查看每个房款自己的 Exterior 与 Floor Plan。
 </p>
 
 </div>
@@ -896,8 +1012,6 @@ Exterior、Floor Plan、Built-up 和价格都会分开显示。
 
 <div class="typeGrid">
 
-
-<!-- 20X70 -->
 
 <div class="typeCard featured">
 
@@ -926,8 +1040,6 @@ Nett Starting Price
 
 
 
-<!-- 22X70 -->
-
 <div class="typeCard">
 
 <div class="type">
@@ -954,8 +1066,6 @@ Nett Starting Price
 </div>
 
 
-
-<!-- 32X70 -->
 
 <div class="typeCard">
 
@@ -1020,8 +1130,20 @@ Nett Starting Price RM879K+
 </div>
 
 
-<div class="plan">
+<!-- 20X70 EXTERIOR -->
 
+<div class="houseExterior">
+
+<img
+src="mtiara-exterior-20x70.jpg"
+alt="M Tiara 20x70 Exterior">
+
+</div>
+
+
+<!-- 20X70 FLOOR PLAN -->
+
+<div class="plan">
 
 <div class="planImg">
 
@@ -1034,68 +1156,32 @@ alt="M Tiara 20x70 Floor Plan">
 
 <div class="listCards">
 
-
 <div class="mini">
-
-<b>
-Land Size
-</b>
-
-<p>
-20×70 Double Storey Terrace
-</p>
-
+<b>Land Size</b>
+<p>20×70 Double Storey Terrace</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Built-up
-</b>
-
-<p>
-1,798 sqft
-</p>
-
+<b>Built-up</b>
+<p>1,798 sqft</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Layout
-</b>
-
-<p>
-4 Bedrooms · 3 Bathrooms
-</p>
-
+<b>Layout</b>
+<p>4 Bedrooms · 3 Bathrooms</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Nett Price
-</b>
-
-<p class="housePrice">
-RM879K+
-</p>
-
+<b>Nett Price</b>
+<p class="housePrice">RM879K+</p>
 </div>
-
 
 <a
 class="btn"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20M%20Tiara%2020x70."
 target="_blank">
-
 询问 20×70 最新单位
-
 </a>
-
 
 </div>
 
@@ -1136,7 +1222,6 @@ Nett Starting Price RM930K+
 </div>
 
 
-
 <!-- 22X70 EXTERIOR -->
 
 <div class="houseExterior">
@@ -1148,11 +1233,9 @@ alt="M Tiara 22x70 Exterior">
 </div>
 
 
-
 <!-- 22X70 FLOOR PLAN -->
 
 <div class="plan">
-
 
 <div class="planImg">
 
@@ -1165,68 +1248,32 @@ alt="M Tiara 22x70 Floor Plan">
 
 <div class="listCards">
 
-
 <div class="mini">
-
-<b>
-Land Size
-</b>
-
-<p>
-22×65 / 22×70 Double Storey Terrace
-</p>
-
+<b>Land Size</b>
+<p>22×65 / 22×70 Double Storey Terrace</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Built-up
-</b>
-
-<p>
-2,004 sqft
-</p>
-
+<b>Built-up</b>
+<p>2,004 sqft</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Layout
-</b>
-
-<p>
-4 Bedrooms · 3 Bathrooms
-</p>
-
+<b>Layout</b>
+<p>4 Bedrooms · 3 Bathrooms</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Nett Price
-</b>
-
-<p class="housePrice">
-RM930K+
-</p>
-
+<b>Nett Price</b>
+<p class="housePrice">RM930K+</p>
 </div>
-
 
 <a
 class="btn"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20M%20Tiara%2022x70."
 target="_blank">
-
 询问 22×70 最新单位
-
 </a>
-
 
 </div>
 
@@ -1267,7 +1314,6 @@ Nett Price RM1.09M
 </div>
 
 
-
 <!-- 32X70 EXTERIOR -->
 
 <div class="houseExterior">
@@ -1279,11 +1325,9 @@ alt="M Tiara 32x70 Cluster Exterior">
 </div>
 
 
-
 <!-- 32X70 FLOOR PLAN -->
 
 <div class="plan">
-
 
 <div class="planImg">
 
@@ -1296,68 +1340,32 @@ alt="M Tiara 32x70 Cluster Floor Plan">
 
 <div class="listCards">
 
-
 <div class="mini">
-
-<b>
-Land Size
-</b>
-
-<p>
-32×70 Double Storey Cluster
-</p>
-
+<b>Land Size</b>
+<p>32×70 Double Storey Cluster</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Built-up
-</b>
-
-<p>
-2,157 sqft
-</p>
-
+<b>Built-up</b>
+<p>2,157 sqft</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Layout
-</b>
-
-<p>
-4 Bedrooms · 4 Bathrooms
-</p>
-
+<b>Layout</b>
+<p>4 Bedrooms · 4 Bathrooms</p>
 </div>
 
-
 <div class="mini">
-
-<b>
-Nett Price
-</b>
-
-<p class="housePrice">
-RM1.09M
-</p>
-
+<b>Nett Price</b>
+<p class="housePrice">RM1.09M</p>
 </div>
-
 
 <a
 class="btn"
 href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20M%20Tiara%2032x70%20Cluster."
 target="_blank">
-
 询问 32×70 最新单位
-
 </a>
-
 
 </div>
 
@@ -1378,6 +1386,7 @@ target="_blank">
 <div class="head">
 
 <div>
+
 <div class="eyebrow">
 LIFESTYLE
 </div>
@@ -1385,6 +1394,7 @@ LIFESTYLE
 <h2>
 为家庭生活规划的社区。
 </h2>
+
 </div>
 
 <p>
@@ -1450,6 +1460,270 @@ M Tiara 的规划包含绿化、休闲空间及步行友善设计，
 <div class="head">
 
 <div>
+
 <div class="eyebrow">
 PRICE
-</
+</div>
+
+<h2>
+M Tiara Nett Price
+</h2>
+
+</div>
+
+<p>
+网页展示简单明确的 Nett Price，
+具体单位、方向及最新库存再进一步确认。
+</p>
+
+</div>
+
+
+<div class="priceBox">
+
+
+<div class="priceHero">
+
+<div class="eyebrow">
+PRICE FROM
+</div>
+
+<div class="big">
+RM879K+
+</div>
+
+<p>
+20×70 · 1,798 sqft · 4房3厕<br>
+Freehold · Gated & Guarded
+</p>
+
+<a
+class="btn"
+href="https://wa.me/60127743554?text=Hi%20JC%2C%20please%20send%20me%20the%20latest%20M%20Tiara%20price%20and%20available%20units."
+target="_blank">
+拿最新 Price List
+</a>
+
+</div>
+
+
+
+<div class="priceDetails">
+
+<div class="eyebrow">
+CURRENT RANGE
+</div>
+
+<h3>
+按房款选择。
+</h3>
+
+<ul>
+
+<li>
+<b>20×70 Phase 2A:</b>
+RM879K+ Nett
+</li>
+
+<li>
+<b>22×65 / 70 Phase 2B:</b>
+RM930K+ Nett
+</li>
+
+<li>
+<b>32×70 Cluster:</b>
+RM1.09M Nett
+</li>
+
+<li>
+实际单位价格根据位置与库存确认
+</li>
+
+<li>
+最终价格以发展商最新确认资料为准
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PACKAGE -->
+
+<section class="section dark">
+
+<div class="wrap">
+
+<div class="head">
+
+<div>
+
+<div class="eyebrow">
+SALES PACKAGE
+</div>
+
+<h2>
+M Tiara Package
+</h2>
+
+</div>
+
+<p>
+不同优惠可能有签约期限或资格条件，
+最终 Package 以发展商最新确认资料为准。
+</p>
+
+</div>
+
+
+<div class="package">
+
+
+<div class="packageIntro">
+
+<div class="eyebrow">
+DEVELOPER PACKAGE
+</div>
+
+<div class="packageBig">
+Up to<br>9%
+</div>
+
+<p>
+最高优惠由不同 Developer Incentive 组成，
+实际适用优惠根据单位及签约条件确认。
+</p>
+
+</div>
+
+
+
+<div class="packageGrid">
+
+
+<div class="packageItem">
+<b>SPA Legal Fee</b>
+<span>
+Applicable SPA legal fee support.
+</span>
+</div>
+
+
+<div class="packageItem">
+<b>Loan Legal Fee</b>
+<span>
+Applicable loan legal fee support subject to package terms.
+</span>
+</div>
+
+
+<div class="packageItem">
+<b>Loan Stamp Duty</b>
+<span>
+Applicable loan stamp duty support.
+</span>
+</div>
+
+
+<div class="packageItem">
+<b>MOT</b>
+<span>
+Subject to latest developer package terms.
+</span>
+</div>
+
+
+<div class="packageItem">
+<b>Security Service</b>
+<span>
+Applicable complimentary security service package.
+</span>
+</div>
+
+
+<div class="packageItem">
+<b>Latest Incentive</b>
+<span>
+Contact JC to confirm current rebate and signing timeline.
+</span>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="eyebrow">
+CONTACT JC
+</div>
+
+<h2>
+想知道 M Tiara 哪一个房款最适合你？
+</h2>
+
+<p>
+告诉我预算、家庭人数和想要的 Land Size，
+我可以直接帮你比较 20×70、22×70 和 32×70 Cluster。
+</p>
+
+<a
+class="btn"
+href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20M%20Tiara."
+target="_blank">
+WhatsApp JC
+</a>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="foot">
+
+<div class="wrap footin">
+
+<div>
+JC PROPERTY · M TIARA @ MUTIARA RINI
+</div>
+
+<div>
+价格、配套及单位供应以发展商最新资料为准。 © 2026 JC Property.
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+class="float"
+href="https://wa.me/60127743554?text=Hi%20JC%2C%20I%20want%20to%20know%20more%20about%20M%20Tiara."
+target="_blank">
+WA
+</a>
+
+
+</body>
+</html>
