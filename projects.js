@@ -22,12 +22,13 @@ const projects = [
   },
 
   
-   {
+   
+  {
   name: "M Tiara",
-  area: "SKUDAI",
+  area: "MUTIARA RINI · SKUDAI",
   price: "RM879K 起",
   meta: "Freehold · Gated & Guarded · 20×70 / 22×70 / 32×70 Cluster",
-  image: "",
+  image: "mtiara-hero.jpg",
   page: "mtiara.html",
   tag: "SKUDAI · LANDED",
   tags: ["LANDED"]
